@@ -1,5 +1,7 @@
 # **Исчерпывающее руководство и аналитический отчет по получению платинового трофея в Crimson Desert**
 
+> Архивный сбор материалов. После аудита от 03.04.2026 этот файл нельзя считать полностью верифицированным источником: официально подтвержденные факты уже перенесены в основной гайд, а спорные цифры, патч-зависимые баги и комьюнити-хаки отсюда нужно перепроверять отдельно перед повторным использованием.
+
 ## **Введение и общая оценка проекта**
 
 Релиз *Crimson Desert*, разработанной студией Pearl Abyss на проприетарном движке Black Space, состоялся 19 марта 2026 года на платформах PlayStation 5, Xbox Series X/S, Windows и macOS.1 Проект представляет собой колоссальную ролевую игру в открытом мире, площадь которого достигает 90 квадратных километров. Игровой процесс охватывает не только классические элементы action-RPG, но и глубокие системы управления лагерем, торговли, укрощения лошадей и масштабных осад.3  
@@ -256,4 +258,3 @@
 49. Crimson Desert Guide: All Demeniss Faction Quests | GAMES.GG, accessed on April 1, 2026, [https://games.gg/crimson-desert/guides/crimson-desert-all-demeniss-faction-quests/](https://games.gg/crimson-desert/guides/crimson-desert-all-demeniss-faction-quests/)  
 50. Faction Side Quests \- Crimson Desert Guide \- IGN, accessed on April 1, 2026, [https://www.ign.com/wikis/crimson-desert/Faction\_Side\_Quests](https://www.ign.com/wikis/crimson-desert/Faction_Side_Quests)  
 51. All Crimson Desert Side Quests: Rewards, Locations & Steps \- NeonLightsMedia, accessed on April 1, 2026, [https://www.neonlightsmedia.com/blog/crimson-desert-all-faction-quests-guide](https://www.neonlightsmedia.com/blog/crimson-desert-all-faction-quests-guide)
-
