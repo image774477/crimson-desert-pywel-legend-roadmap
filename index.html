@@ -1,10 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Crimson Desert - Pywel Legend Roadmap</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<title>Crimson Desert - Дорожная карта Pywel Legend</title>
+<script src="https://telegram.org/js/telegram-web-app.js">
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -20,45 +21,1801 @@
 .timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:.7rem 0}.timeline button{min-height:40px;border:1px solid rgba(109,79,50,.3);border-radius:13px;background:linear-gradient(180deg,#8d1f1f,#5d1717);color:#f7efe7;font:700 .7rem/1 "Manrope",sans-serif;cursor:pointer;box-shadow:0 10px 22px rgba(93,23,23,.16)}.timeline button.on{background:linear-gradient(180deg,#b52a2a,#761919);color:#fff7ef;border-color:rgba(212,175,55,.42);box-shadow:0 0 0 1px rgba(212,175,55,.12),0 12px 24px rgba(93,23,23,.2)}.hlist{margin:0;padding:0;list-style:none;display:grid;gap:6px}.hlist li{position:relative;padding-left:14px;font-size:.84rem;color:#322620}.hlist li:before{content:"◆";position:absolute;left:0;top:0;color:var(--ac2);font-size:.58rem}
 .article{display:grid;gap:24px}.section{min-height:78vh;display:flex;align-items:center}.card{width:100%;padding:22px;border:1px solid rgba(118,90,55,.2);border-radius:28px;background:linear-gradient(180deg,#e7d7bb,#ceb08c),repeating-linear-gradient(135deg,rgba(255,255,255,.045) 0 10px,rgba(0,0,0,0) 10px 20px);box-shadow:var(--shadow);color:var(--ink);position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(178,34,34,.035),rgba(0,0,0,0) 28%),radial-gradient(circle at 82% 18%,rgba(212,175,55,.08),transparent 18%)}.card:after{content:"";position:absolute;inset:12px;border-radius:20px;border:1px solid rgba(95,67,47,.08);pointer-events:none}.card h2{font-family:"Cinzel",serif;font-size:clamp(1.42rem,2.2vw,1.95rem);margin-bottom:.56rem}.card p,.card li{color:#2a211b}.card > p:first-of-type{color:#5b473c;font-weight:600}.nodes,.grid2{display:grid;gap:12px}.nodes{grid-template-columns:repeat(3,minmax(0,1fr));margin:.9rem 0}.node{padding:.82rem;border:1px solid rgba(109,79,50,.16);border-radius:18px;background:linear-gradient(180deg,rgba(245,236,220,.56),rgba(214,190,155,.48)),repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 8px,rgba(0,0,0,0) 8px 16px)}.node h4{margin:0 0 .26rem;font-size:.95rem;color:#4a251a}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}ul{margin:0;padding-left:1.1rem;display:grid;gap:4px}.splits{list-style:none;padding:0}.splits li{padding:.58rem .68rem;border:1px solid rgba(109,79,50,.14);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,.2))}.splits time{font-weight:800;color:#8e2a2a;margin-right:.45rem}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:.9rem 0}.tags span{padding:.26rem .66rem;border:1px solid rgba(125,95,55,.2);border-radius:999px;background:linear-gradient(180deg,rgba(212,175,55,.18),rgba(255,255,255,.18));font-size:.76rem}.code{padding:.72rem .8rem;border:1px dashed rgba(109,79,50,.22);border-radius:14px;background:linear-gradient(135deg,rgba(178,34,34,.08),rgba(255,255,255,.14));font-size:.84rem;color:#30261f}
 .phase{margin-top:.96rem;padding:.88rem;border:1px solid rgba(109,79,50,.14);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,.16))}.phaseHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;gap:8px}.phaseHead span{font-size:.76rem;letter-spacing:.08em;color:#8f2727;text-transform:uppercase;font-weight:800}.phaseList{list-style:none;padding:0;margin:0;display:grid;gap:6px}.phaseList label,.todo label{display:grid;grid-template-columns:auto 1fr;gap:.56rem;align-items:start;padding:.52rem .6rem;border:1px solid rgba(109,79,50,.14);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,.3));font-size:.86rem}.phaseList input,.todo input{margin-top:.16rem;accent-color:var(--ac)}
-.deep{margin-top:1rem;padding:.72rem;border:1px dashed rgba(109,79,50,.18);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.08))}.deep h3{margin:.06rem 0 .62rem;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#7b2d2d}.acc{border:1px solid rgba(109,79,50,.14);border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,.24))}.acc+.acc{margin-top:.52rem}.acc summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:.78rem .9rem;font-weight:700}.acc summary::-webkit-details-marker{display:none}.acc summary span{font-size:.93rem;line-height:1.25}.acc summary small{padding:.2rem .52rem;border-radius:999px;background:rgba(109,79,50,.1);font-size:.72rem;color:#6f5b50}.acc summary:after{content:"+";display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:999px;background:rgba(109,79,50,.08)}.acc[open] summary:after{content:"-"}.accBody{padding:0 .84rem .82rem}.accBody p{margin:0 0 .6rem;font-size:.88rem}.accBody p:last-child{margin-bottom:0}
+.deep{margin-top:1rem;padding:.72rem;border:1px dashed rgba(109,79,50,.18);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.08))}.deep h3{margin:.06rem 0 .62rem;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#7b2d2d}.acc{border:1px solid rgba(109,79,50,.14);border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,.24))}.acc+.acc{margin-top:.52rem}.acc>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:.78rem .9rem;font-weight:700}.acc>summary::-webkit-details-marker{display:none}.acc>summary>span{font-size:.93rem;line-height:1.25}.acc>summary>small{padding:.2rem .52rem;border-radius:999px;background:rgba(109,79,50,.1);font-size:.72rem;color:#6f5b50}.acc>summary:after{content:"▾";display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;justify-self:end;color:#6f5b50;font-size:.86rem;line-height:1;transform:rotate(0deg);transition:transform .18s ease,color .18s ease}.acc[open]>summary:after{transform:rotate(180deg)}.accBody{padding:0 .84rem .82rem}.accBody p{margin:0 0 .6rem;font-size:.88rem}.accBody p:last-child{margin-bottom:0}
+.trophyGuide{margin-top:1.1rem}.trophyIntro{margin:.1rem 0 .78rem;color:#4d3c31;font-size:.88rem}.trophySummary{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 .92rem}.trophySummary span{padding:.28rem .68rem;border:1px solid rgba(125,95,55,.2);border-radius:999px;background:linear-gradient(180deg,rgba(212,175,55,.2),rgba(255,255,255,.2));font-size:.75rem;font-weight:700;color:#4a382c}.trophyGuideLegacy[hidden]{display:none!important}.trophyMount{display:grid;gap:10px}.trophyEntry>summary{grid-template-columns:minmax(0,1fr) auto;padding:.82rem .9rem}.trophyEntryHead{display:grid;grid-template-columns:68px 1fr auto;gap:12px;align-items:center}.trophyEntryIcon{width:68px;height:68px;object-fit:cover;border-radius:14px;border:1px solid rgba(109,79,50,.18);background:linear-gradient(180deg,#f6ecda,#d6ba92)}.trophyEntryInfo h4{margin:0;font-size:1rem;line-height:1.16;color:#45281d}.trophyEntryInfo p{margin:.2rem 0 .28rem;font-size:.84rem;color:#35281f}.trophyEntryInfo small{display:block;color:#7a5d45;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}.trophyBodyLead{margin:0 0 .7rem;font-size:.86rem;color:#35281f}.trophyBodyMeta{display:grid;gap:8px;margin:0 0 .8rem}.trophyBodyMeta div{padding:.68rem .74rem;border:1px solid rgba(109,79,50,.14);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,.22))}.trophyBodyMeta b{display:block;margin-bottom:.2rem;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#7d5b43}.routeButtons{display:flex;flex-wrap:wrap;gap:8px}.routeButton{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:118px;padding:.62rem .72rem;border:1px solid rgba(109,79,50,.24);border-radius:14px;background:linear-gradient(180deg,#8d1f1f,#5d1717);box-shadow:0 10px 22px rgba(93,23,23,.16);color:#f7efe7;font:700 .78rem/1 "Manrope",sans-serif;text-align:left;cursor:pointer;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.routeButton:hover{transform:translateY(-1px);border-color:rgba(212,175,55,.42);box-shadow:0 0 0 1px rgba(212,175,55,.12),0 12px 24px rgba(93,23,23,.2)}.routeButton small{font:600 .62rem/1.2 "Manrope",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:rgba(247,239,231,.78)}.routeFallback{margin:0;font-size:.86rem;color:#35281f}.trophyBranchList{display:grid;gap:8px}.trophyBranch>summary{padding:.72rem .84rem}.branchLead{margin:0 0 .56rem;font-size:.84rem;color:#3b2e25}.branchBullets{display:grid;gap:5px;margin:0;padding-left:1.08rem}.branchBullets li{font-size:.82rem;color:#32261e}.branchBlock{margin-top:.72rem;padding:.74rem;border:1px solid rgba(109,79,50,.14);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.18))}.branchBlock h5{margin:0 0 .5rem;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:#7b5b43}.branchSubBullets{display:grid;gap:6px;margin:0;padding-left:1.08rem}.branchSubBullets li{font-size:.82rem;color:#32261e}.branchParagraph{margin:0 0 .5rem;font-size:.83rem;color:#35281f}.branchEntryList{display:grid;gap:8px}.trophyLeaf>summary{padding:.66rem .8rem}.trophyLeaf .accBody{padding:0 .8rem .8rem}.trophyLeafLead{margin:0 0 .45rem;font-size:.83rem;color:#3b2e25}.trophyType{display:inline-flex;align-items:center;gap:6px;padding:.18rem .46rem;border-radius:999px;border:1px solid rgba(109,79,50,.16);font-size:.68rem;font-weight:800;white-space:nowrap}.trophyType img{width:14px;height:14px}.trophyType-bronze{background:rgba(166,108,57,.12);color:#7f4d25}.trophyType-silver{background:rgba(122,133,148,.12);color:#53606d}.trophyType-gold{background:rgba(212,175,55,.18);color:#755512}.trophyType-platinum{background:rgba(135,134,196,.14);color:#4f4ea2}
 .checkWrap{margin-top:1rem;padding:1rem;border:1px solid rgba(118,90,55,.2);border-radius:24px;background:linear-gradient(180deg,#e4d3b6,#c7a678),repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 10px,rgba(0,0,0,0) 10px 20px)}.checkHead{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;color:#5d4b40;margin-bottom:.56rem}.hint{margin:.12rem 0 .7rem;color:#53484e;font-size:.84rem}.todo{list-style:none;padding:0;margin:0;display:grid;gap:7px}.todo small{display:block;color:#7a5d45;font-size:.72rem;margin-top:.1rem}.rst{margin-top:.8rem;padding:.82rem 1rem;border:1px solid rgba(109,79,50,.3);border-radius:14px;background:linear-gradient(180deg,#8d1f1f,#5d1717);color:#f7efe7;font:700 .84rem/1 "Manrope",sans-serif;cursor:pointer}
 .madeBy{display:flex;align-items:center;justify-content:center;gap:10px;padding:22px 0 10px;color:var(--mut);font-size:.82rem}.madeByBrand{display:inline-flex;align-items:center;gap:10px}.madeByMark{width:18px;height:18px}.madeByWord{height:14px}
 #mpeek{display:none;position:fixed;left:12px;right:12px;bottom:10px;z-index:120;padding:.6rem .72rem;border:1px solid rgba(212,175,55,.18);border-radius:16px;background:linear-gradient(180deg,rgba(28,28,28,.96),rgba(14,14,14,.98)),repeating-linear-gradient(135deg,rgba(255,255,255,.02) 0 8px,rgba(0,0,0,0) 8px 16px);box-shadow:0 18px 38px rgba(0,0,0,.42);opacity:0;transform:translateY(12px);pointer-events:none;transition:.22s}.showPeek{opacity:1!important;transform:translateY(0)!important}.mpeekTop{display:flex;justify-content:space-between;align-items:center}.mpeekTop small{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#d8c7a8}.mpeekTitle{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:.18rem}.mpeekBar{height:6px;border-radius:999px;background:rgba(255,255,255,.14);overflow:hidden;margin-top:.38rem}.mpeekBar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#8b1e1e,#b22222 36%,#d4af37 100%)}
 #winModal{position:fixed;inset:0;display:grid;place-items:center;padding:18px;background:rgba(10,10,10,.78);backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .22s ease}.winShow{opacity:1!important;pointer-events:auto!important}.winCard{width:min(430px,100%);padding:22px 20px;border:1px solid rgba(212,175,55,.18);border-radius:28px;background:linear-gradient(180deg,rgba(30,30,30,.98),rgba(14,14,14,.98)),repeating-linear-gradient(135deg,rgba(255,255,255,.02) 0 10px,rgba(0,0,0,0) 10px 20px);box-shadow:var(--shadow);text-align:center}.winCard h3{font-family:"Cinzel",serif;font-size:2rem}.winBadge{display:block;width:min(240px,100%);margin:12px auto 10px;border-radius:20px;border:1px solid rgba(212,175,55,.2)}.winNote{display:block;color:var(--mut);font-size:.8rem;letter-spacing:.05em;text-transform:uppercase}.winActions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}.winActions a,.winActions button{padding:.72rem 1rem;border:0;border-radius:999px;font:700 .86rem/1 "Manrope",sans-serif;text-decoration:none;cursor:pointer}.winActions a{background:linear-gradient(180deg,#d4af37,#a98218);color:#18120e}.winActions button{background:rgba(255,255,255,.1);color:var(--tx);border:1px solid rgba(212,175,55,.16)}
-@media (max-width:980px){.layout{grid-template-columns:1fr}.sidebar{display:none}#mpeek{display:block}.nodes{grid-template-columns:1fr}.section{min-height:68vh}}@media (max-width:720px){.hero{padding:28px 20px 34px;background-position:center 24%}.stats,.grid2{grid-template-columns:1fr}.wrap{width:min(100% - 16px,1220px)}}
+@media (max-width:980px){.layout{grid-template-columns:1fr}.sidebar{display:none}#mpeek{display:block}.nodes{grid-template-columns:1fr}.section{min-height:68vh}}@media (max-width:720px){.hero{padding:28px 20px 34px;background-position:center 24%}.stats,.grid2{grid-template-columns:1fr}.wrap{width:min(100% - 16px,1220px)}.trophyEntryHead{grid-template-columns:56px 1fr;align-items:start}.trophyEntryIcon{width:56px;height:56px}.trophyEntryHead .trophyType{grid-column:2;justify-self:start}}
 </style>
 </head>
 <body>
 <main class="wrap">
 <header class="hero scene" id="s0" data-short="00" data-phase="Пре-брифинг" data-title="Перед стартом в Пайвеле" data-obj="Понять, как пройти к Pywel Legend без бессмысленного перепрохождения и сломанного долгого гринда." data-risk="Открыть мир слишком рано, не включить нужные категории испытаний и потерять десятки часов на действия, которые не засчитываются." data-gain="Чистый маршрут к платине с правильным порядком: логистика, артефакты, история, категории, финальный аудит." data-list="35 трофеев PS5|141 артефакт Бездны|300-400 часов|8 фаз маршрута">
-<span class="kicker">мини-приложение Telegram / маршрут к платине</span>
+<span class="kicker">Crimson Desert / маршрут к Pywel Legend</span>
 <h1>Crimson Desert<br>Интерактивный путь<br>к Pywel Legend</h1>
-<div class="stats"><div class="stat"><b>35</b><span>Трофеев PS5</span></div><div class="stat"><b>141</b><span>Артефакт</span></div><div class="stat"><b>300-400ч</b><span>Ориентир</span></div><div class="stat"><b>3</b><span>Красные зоны</span></div></div>
+<div class="stats">
+<div class="stat">
+<b>35</b>
+<span>Трофеев PS5</span>
+</div>
+<div class="stat">
+<b>141</b>
+<span>Артефакт</span>
+</div>
+<div class="stat">
+<b>300-400ч</b>
+<span>Ориентир</span>
+</div>
+<div class="stat">
+<b>3</b>
+<span>Красные зоны</span>
+</div>
+</div>
 <p class="warn">Главное правило маршрута: сначала открываете логистику и активируете нужные категории испытаний через Артефакты Бездны, а уже потом гриндите убийства, оружие, форты, мини-игры и побочные системы. Иначе часть прогресса просто не запишется туда, куда вам нужно.</p>
 </header>
-<div id="mpeek" aria-label="Мобильный прогресс"><div class="mpeekTop"><small id="mstep">Фаза 0/8</small><b id="mpercent">0%</b></div><div class="mpeekTitle" id="mtitle">Перед стартом в Пайвеле</div><div class="mpeekBar"><span id="mfill"></span></div></div>
+<div id="mpeek" aria-label="Мобильный прогресс">
+<div class="mpeekTop">
+<small id="mstep">Фаза 0/8</small>
+<b id="mpercent">0%</b>
+</div>
+<div class="mpeekTitle" id="mtitle">Перед стартом в Пайвеле</div>
+<div class="mpeekBar">
+<span id="mfill">
+</span>
+</div>
+</div>
 <div class="layout">
-<aside class="sidebar" id="hud"><small id="hp">Пре-брифинг</small><h3 id="ht">Перед стартом в Пайвеле</h3><p id="ho"></p><div class="meta"><div><b>Риск</b><span id="hr"></span></div><div><b>Награда</b><span id="hg"></span></div></div><div class="row"><span>Маршрут до Pywel Legend</span><span id="hpr">0%</span></div><div class="bar" id="hbar"><span id="hf"></span></div><div class="ring" id="ring"><span id="rt">0 / 16</span></div><div class="timeline" id="timeline"></div><ul class="hlist" id="hlist"></ul></aside>
+<aside class="sidebar" id="hud">
+<small id="hp">Пре-брифинг</small>
+<h3 id="ht">Перед стартом в Пайвеле</h3>
+<p id="ho">
+</p>
+<div class="meta">
+<div>
+<b>Риск</b>
+<span id="hr">
+</span>
+</div>
+<div>
+<b>Награда</b>
+<span id="hg">
+</span>
+</div>
+</div>
+<div class="row">
+<span>Маршрут до Pywel Legend</span>
+<span id="hpr">0%</span>
+</div>
+<div class="bar" id="hbar">
+<span id="hf">
+</span>
+</div>
+<div class="ring" id="ring">
+<span id="rt">0 / 16</span>
+</div>
+<div class="timeline" id="timeline">
+</div>
+<ul class="hlist" id="hlist">
+</ul>
+</aside>
 <div class="article">
-<section class="scene section" id="s1" data-short="01" data-phase="Фаза 1/8" data-title="Как читать этот гайд" data-obj="Быстро понять, кому подходит маршрут и как пользоваться мини-приложением по ходу 300+ часов." data-risk="Попробовать играть свободно, не разделяя маршрут на этапы, и утонуть в хаотичной зачистке континента." data-gain="Понимание структуры дорожной карты, ключевых пакетов трофеев и роли каждой фазы." data-list="Pywel Legend|Expert Explorer|Unvanquished Strategist|Shadowlord"><div class="card"><h2>1) Как читать этот мини-гайд</h2><p class="warn"><b>Важно:</b> это маршрут для читателя, который идет именно за полным закрытием профиля. Здесь есть спойлеры по системам, локациям, поздним главам и тем категориям трофеев, которые лучше держать в голове заранее.</p><p class="warn"><b>База маршрута:</b> на PlayStation 5 это 35 трофеев вместе с платиной <b>Pywel Legend</b>. На Xbox и PC работа почти та же самая, только без платиновой плашки.</p><div class="nodes"><div class="node"><h4>Иду с нуля</h4><p>Читайте фазы подряд: от логистики и артефактов до большого гринда и финального аудита.</p></div><div class="node"><h4>Уже в середине</h4><p>Сначала проверьте фазы 2 и 3: они показывают, не сломали ли вы себе долгий гринд раньше времени.</p></div><div class="node"><h4>Закрываю хвосты</h4><p>Переходите к фазам 6-8: там порядок зачистки категорий, побочных систем и последнего контроля.</p></div></div><div class="grid2"><ul><li><b>Формат:</b> мини-приложение Telegram с локальным прогрессом.</li><li><b>Стиль чтения:</b> сверху короткая логика, ниже раскрываемые детали.</li><li><b>Язык трофеев:</b> английские названия там, где это полезно сверять с игрой.</li></ul><ul><li><b>Ориентир по времени:</b> сюжет долгий, платина очень долгая.</li><li><b>Маршрут не про спидран:</b> экономия идет от порядка действий.</li><li><b>Формально missable нет:</b> но плохой порядок легко делает профиль грязным и дорогим.</li></ul></div><div class="tags"><span>Полные спойлеры</span><span>Пошаговая логика</span><span>Локальный прогресс</span><span>Без ложных shortcut'ов</span></div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 1</b></div><ul class="phaseList"><li><label><input data-k="p1_route" type="checkbox">Понимаю, что маршрут строится не вокруг сюжета, а вокруг правильного порядка категорий и длинного гринда</label></li><li><label><input data-k="p1_basics" type="checkbox">Определил, иду ли я с нуля, из середины игры или уже закрываю только хвосты</label></li></ul></div><div class="deep"><h3>Ключевые пакеты трофеев</h3><details class="acc"><summary><span>История и база профиля</span><small>Старт</small></summary><div class="accBody"><p><b>Pywel Legend</b> - это не отдельная активность, а финальный флажок на весь профиль PS5. Сюжетный каркас держится на <b>Novice Adventurer</b>, <b>Master Camper</b>, <b>Protector of Pailune</b>, <b>Expert Storyteller</b> и <b>Proud Returnee</b>.</p><p>Важно понимать ритм: первые четыре трофея вы в основном получаете по истории, а <b>Proud Returnee</b> уже требует не просто пройти главы, а довести лагерь Серых Грив до переезда в Пайлун. То есть даже «сюжетный пакет» здесь частично завязан на лагерь, ресурсы и позднее окно после седьмой главы.</p></div></details><details class="acc"><summary><span>Исследование континента</span><small>Мир</small></summary><div class="accBody"><p><b>Expert Explorer</b> - большой пакет мира, куда сходятся Бездна, секретные места, древние руины, святилища и лабиринты. Отдельно идут <b>Conqueror of Spires</b> и <b>Navigator of the Stars</b>.</p><p>Практически это несколько разных мини-кампаний внутри одной большой: около 40 зон Бездны, 60 секретных мест, 37 руин, 16 святилищ и 4 лабиринта. У них разный ритм, поэтому полезнее вести их очередями, а не воспринимать как один бесконечный список галочек.</p><p>Шпили и созвездия тоже лучше держать рядом, но отдельно в голове: часть шпилей сюжетно закрыта, а звездный пакет упирается в <b>Constellation Helm</b>, Gate of Truth и сундуки по небесным подсказкам, а не в случайные вылазки «раз уж был рядом».</p></div></details><details class="acc"><summary><span>Бой и тяжелые испытания</span><small>Гринд</small></summary><div class="accBody"><p><b>Unvanquished Strategist</b>, <b>Brilliant Tactician</b>, <b>Battlefield Conqueror</b>, <b>Relentless Warrior</b>, <b>Grand Collector of Arms</b> и <b>Master of Artillery</b> - главные поглотители времени, если прийти к ним без фундамента.</p><p>Этот блок нельзя брать наскоком: здесь 64 испытания оружейного мастерства, отдельные категории на тактику, большие баталии, спецоружие и ручную пушку. Самая частая ошибка - прыгать между Клиффом, Дамианой и Унгкой без порядка и терять понимание, какая категория вообще сейчас должна двигаться.</p></div></details><details class="acc"><summary><span>Побочные системы</span><small>Лайфстайл</small></summary><div class="accBody"><p><b>Shadowlord</b>, <b>Lord of Honor</b>, <b>The Golden Merchant</b>, <b>True Gamer</b>, <b>Ultimate Hunter</b>, <b>Natural Collector</b>, <b>Tamer of Legends</b> удобнее добивать отдельным большим блоком, когда карта уже раскрыта.</p><p>Это важный психологический момент маршрута: бытовые трофеи здесь совсем не «фоновые». Преступность требует маски и локальных серий действий, торговля - логистики и денег лагеря, мини-игры - отдельных спокойных сессий, а маунты и охота плохо закрываются по остаточному принципу «когда-нибудь потом».</p></div></details></div></div></section>
-<section class="scene section" id="s2" data-short="02" data-phase="Фаза 2/8" data-title="Правило N1: артефакты раньше гринда" data-obj="Не дать игре украсть десятки часов через неретроактивный прогресс испытаний." data-risk="Сначала качать оружие, чистить форты и бегать по побочкам, а потом обнаружить, что нужная категория испытаний вообще не была активирована." data-gain="Все будущие действия начинают записываться туда, куда нужно для трофеев." data-list="Sealed Abyss Artifact|Guiding Light|Hidden Bells|Abyss Nexus"><div class="card"><h2>2) Запечатанные Артефакты Бездны - это фундамент, а не коллекционный хвост</h2><p>Самая дорогая ошибка в Crimson Desert - начать играть «естественно» и оставить Артефакты Бездны на потом. Почти весь большой гринд в этой игре завязан на категорию испытаний, а категории часто не считают прогресс задним числом.</p><div class="nodes"><div class="node"><h4>141 артефакт</h4><p>Это не косметика, а включатель больших пакетов испытаний по миру, бою и побочным системам.</p></div><div class="node"><h4>Guiding Light</h4><p>Ищите артефакты не вслепую: свет, белое свечение и значок куба на мини-карте - ваши базовые инструменты.</p></div><div class="node"><h4>Сначала дороги</h4><p>Большинство алтарей удобно собирать вдоль главных маршрутов после нормального раскрытия карты.</p></div></div><div class="code"><b>Короткая формула фазы:</b> сначала открыть карту и нужный артефакт категории - потом уже делать убийства, зачистки и специфические действия под трофей.</div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 2</b></div><ul class="phaseList"><li><label><input data-k="p2_artifacts" type="checkbox">Принял правило: перед большим гриндом сначала активирую нужные категории испытаний через Артефакты Бездны</label></li><li><label><input data-k="p2_noBlind" type="checkbox">Не иду в свободную зачистку мира, пока не рассеял туман войны и не поставил базовую сеть перемещений</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Почему прогресс нельзя откладывать</span><small>Основа</small></summary><div class="accBody"><p>Главная угроза здесь не один missable-трофей, а полезные действия, сделанные слишком рано. Если категория испытаний еще не открыта, профиль может просто не принять нужный зачет.</p><p>Классический провал из ваших исходников - часы, вложенные в стрельбу, копья или форты до активации нужного артефакта. Пока вы не подобрали и не включили предмет в инвентаре, а цепочка не появилась в <b>Journal - Challenges</b>, игра часто считает, что нужной категории для вас еще не существует.</p></div></details><details class="acc"><summary><span>Что открыть до свободной игры</span><small>Логистика</small></summary><div class="accBody"><p>Прежде чем жить в open world как в песочнице, лучше активировать 8 Скрытых Колоколов, поставить сеть <b>Abyss Nexus</b> и только потом системно собирать артефакты.</p><p>Сами артефакты удобнее искать не по наитию, а через короткий ритуал: идете вдоль дорог, даете <b>Guiding Light</b>, смотрите на белое свечение ночью и держите в поле зрения фиолетовый куб на мини-карте. По исходникам радиус подсветки около 30 метров, а глобальная карта тут не помогает, так что без этой рутины легко пробежать мимо.</p></div></details><details class="acc"><summary><span>Какие пакеты вы этим включаете</span><small>Пакеты</small></summary><div class="accBody"><p>По вашим исходникам через Артефакты Бездны рано или поздно завязаны оружейное мастерство, секретные места, исследование Бездны, руины, святилища, боевые испытания, шпили, торговля, преступность и часть мини-игр.</p><p>Если говорить совсем приземленно, артефакты включают учет для самых дорогих категорий: 64 оружейных испытаний, 60 секретных мест, 40 зон Бездны, 37 руин, 16 святилищ, пакетов на шпили, преступность, торговлю и даже отдельные «игры разума». Поэтому мыслить ими как коллекционкой нельзя: это ваш рубильник прогресса.</p></div></details></div></div></section>
-<section class="scene section" id="s3" data-short="03" data-phase="Фаза 3/8" data-title="Три красные зоны маршрута" data-obj="Не потерять темп на фортах, уникальном оружии и проблемных испытаниях." data-risk="Рано зачистить нужные точки, продать или сломать нужный ствол, а потом пытаться чинить это уже на умирающем профиле." data-gain="Самые неприятные ловушки обезврежены заранее, до массового гринда." data-list="Battlefield Conqueror|Grand Collector of Arms|Master of Artillery|Bismuth Spear"><div class="card"><h2>3) Формально ничего не missable. Практически - есть три места, где легко испортить себе жизнь</h2><p>Платина чаще ломается не на боссе, а на неверном порядке действий. Самые опасные зоны здесь - ранняя зачистка фортов, обращение с уникальным оружием и отдельные проблемные испытания ручной пушки.</p><div class="nodes"><div class="node"><h4>Не чистите все форты рано</h4><p>Для части боевых и артиллерийских испытаний нужны живые башни, укрепления и рабочие точки на карте.</p></div><div class="node"><h4>Не продавайте уникальное оружие</h4><p>Пока не закрыли связанные испытания, уникальный ствол - это рабочий инструмент, а не мусор.</p></div><div class="node"><h4>Barraging Cannon IV</h4><p>Если выстрел по всаднику с 30+ метров не считается, нужен отдельный обходной сценарий, а не бесконечные повторы.</p></div></div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 3</b></div><ul class="phaseList"><li><label><input data-k="p3_forts" type="checkbox">Не превращаю раннюю зачистку мира в тотальный вынос всех фортов и сторожевых башен до нужных боевых испытаний</label></li><li><label><input data-k="p3_weapons" type="checkbox">Не продаю и не вырабатываю уникальное оружие до завершения привязанных к нему испытаний, особенно у ломких копий</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Форты и Battlefield Conqueror</span><small>Риск</small></summary><div class="accBody"><p>Пока вы не добрались до системного закрытия боевых категорий, мир должен оставаться чуть-чуть живым. Не делайте из ранней карты стерильную пустыню без башен и укреплений.</p><p>По вашим заметкам это особенно важно для <b>Battlefield Conqueror</b> и части <b>Master of Artillery</b>: испытания вроде <b>Sinking Fort</b> и поздних пушечных задач требуют реальных сторожевых башен и фортификаций. Если заранее освободить все крупные точки, потом придется не фармить, а искать, где вообще еще осталась рабочая цель.</p></div></details><details class="acc"><summary><span>Grand Collector of Arms и ломкое оружие</span><small>Критично</small></summary><div class="accBody"><p><b>Bismuth Spear</b> и похожие экземпляры со скрытой прочностью могут сломаться до завершения нужного испытания. Нашли ломкое уникальное оружие - сразу смотрите привязанный челлендж и закрывайте его в ближайшее удобное окно.</p><p>Здесь опасны сразу две вещи: продажа и износ. Проданные уникальные предметы можно выкупить лишь короткое время, а сломанные копья вроде <b>Bismuth Spear</b> или <b>Propeller Spear</b> исчезают окончательно. Отдельно важно, что поздняя крафтовая версия <b>Kuku Bismuth Spear</b> не закрывает прогресс оригинального испытания, так что лучше сразу добить 30 убийств на слабых целях вроде птиц Kuku у <b>Rocca's Hill</b>.</p></div></details><details class="acc"><summary><span>Если Barraging Cannon IV не засчитывается</span><small>Кейс</small></summary><div class="accBody"><p>Из ваших материалов рабочий план такой: поднимайте высокий розыск в Гернанде рядом с конюшнями, провоцируйте появление конной стражи и отстреливайте цель с моста.</p><p>Это не просто перестраховка, а реальный workaround под багнутую регистрацию на патчах 1.01.00-1.01.03. Обычные конные бандиты, особенно у Черных Медведей, часто слишком живучи и плохо засчитываются, а после ранней зачистки мира их еще и неудобно искать. Поэтому сценарий со стражей у Гернанда - это экономия нервов, а не грязный костыль.</p></div></details></div></div></section>
-<section class="scene section" id="s4" data-short="04" data-phase="Фаза 4/8" data-title="Первые 30 часов: карта, колокола, артефакты, инвентарь" data-obj="Подготовить континент к длинному прохождению и не утонуть в бессмысленных крюках." data-risk="Играть по наитию, терять темп на логистике и возвращаться в каждый регион по нескольку раз." data-gain="Карта начинает работать как маршрут, а не как помеха: быстрые точки, открытый туман, растущий инвентарь и нормальная база ресурсов." data-list="Hidden Bells|Abyss Nexus|Requests|Archery Contest"><div class="card"><h2>4) Ранний этап - это инфраструктура, а не хаотичные побочки</h2><p>В первые 10-30 часов лучше всего работают четыре задачи: снять туман войны, открыть сеть перемещений, начать последовательный сбор артефактов и не задушить себя инвентарем.</p><ul class="splits"><li><time>1-10ч</time><b>Hidden Bells:</b> после пролога держите курс на 8 колоколов и первые Abyss Nexus.</li><li><time>10-20ч</time><b>Артефакты по дорогам:</b> начинайте системный сбор вдоль главных маршрутов.</li><li><time>После 2 главы</time><b>Инвентарь:</b> берите Requests в Гернанде, покупайте сумки, не игнорируйте слоты.</li><li><time>Параллельно</time><b>Экономика:</b> деньги лучше делать на ресурсах и торговле, а не на самообмане с Archery Contest.</li></ul><div class="tags"><span>8 Hidden Bells</span><span>Abyss Nexus</span><span>Requests</span><span>Инвентарь</span><span>Ранняя экономика</span></div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 4</b></div><ul class="phaseList"><li><label><input data-k="p4_map" type="checkbox">Развернул раннюю логистику: туман войны, первые Nexus и понятный маршрут между регионами</label></li><li><label><input data-k="p4_economy" type="checkbox">Начал сбор артефактов и параллельно решил ранний инвентарь и базовую экономику без пустого фарма</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Почему Hidden Bells идут так рано</span><small>Карта</small></summary><div class="accBody"><p>Если оставить туман войны надолго, любая следующая категория превращается в повторную экспедицию в те же регионы. Колокола окупаются потом десятки раз.</p><p>По вашим материалам на восемь колоколов легко уходит больше пяти часов, но это один из самых выгодных ранних вкладов во всей платине. После такого захода карта перестает быть черной кашей, и вы уже не ездите во второй или третий раз в тот же регион только потому, что когда-то пробежали его вслепую.</p></div></details><details class="acc"><summary><span>Abyss Nexus и удобный каркас мира</span><small>Логистика</small></summary><div class="accBody"><p>Быстрые перемещения здесь позволяют собирать длинные маршруты по артефактам, шпилям, лагерям и побочным системам без ощущения, что вы каждый раз начинаете новую игру.</p><p>Полезная деталь из исходников: узлы часто сидят внутри больших белых зон поиска с вопросительным знаком, а точную точку помогает вытянуть <b>Guiding Light</b>. Поэтому логика ранней фазы простая: увидели новый белый пузырь на карте - не откладывайте, потому что каждый открытый <b>Abyss Nexus</b> потом сэкономит десятки мелких, но очень дорогих возвратов.</p></div></details><details class="acc"><summary><span>Турнир лучников: нужен, но не как кошелек</span><small>Нюанс</small></summary><div class="accBody"><p>По вашим материалам 80 медных монет - это вход, а не награда. Турнир может быть нужен по испытаниям, но стабильным фармом денег он не является.</p><p>Если трофейный маршрут все-таки приводит вас туда рано, держите два практических нюанса: после 4-5 поражений подряд без выхода из диалога ИИ начинает стрелять медленнее, а на PS5 режим <b>Performance Mode</b> заметно ломает ему тайминги. Для реальных денег в начале лучше работать через <b>Requests</b> в Гернанде, покупку сумок, добычу <b>Scolecite</b> и <b>Azurite</b> и торговлю краденым скотом, а не пытаться превратить турнир в банк.</p></div></details></div></div></section>
-<section class="scene section" id="s5" data-short="05" data-phase="Фаза 5/8" data-title="Сюжет, лагерь и боеготовность" data-obj="Провести основную кампанию так, чтобы она открывала новые пакеты трофеев и не ломала поздний гринд." data-risk="Пройти историю слишком инертно, не используя лагерь, компаньонов, кулинарию и поздние сюжетные окна." data-gain="Открытый Пайлун, переезд лагеря, полезные системные апгрейды и готовность к тяжелым категориям." data-list="Proud Returnee|Reconstructing Pailune|A Shadow in the Void|Refinement"><div class="card"><h2>5) Сюжет здесь нужен не только ради титров</h2><p>Середина прохождения - это момент, когда история должна начать кормить маршрут. Важнее всего здесь три вещи: не забыть про перенос лагеря, подготовить бытовую боеготовность через кухню и улучшения, а также не пропустить полезный shortcut в двенадцатой главе.</p><ul class="splits"><li><time>Глава 7</time><b>Homecoming:</b> после нее и квеста <b>Time to Face Justice</b> открывается <b>Reconstructing Pailune</b> и трофей <b>Proud Returnee</b>.</li><li><time>Глава 12</time><b>A Shadow in the Void:</b> вместо стандартного длинного маршрута используйте shortcut через разбитый корабль в русле реки Деменисса.</li><li><time>Параллельно</time><b>Кулинария:</b> еда - это не роскошь, а главный бытовой слой выживания.</li><li><time>После кузнеца</time><b>Refinement:</b> как только доступны улучшения, перестаньте ходить на тяжелые категории «как есть».</li></ul><div class="nodes"><div class="node"><h4>Клифф</h4><p>База большинства оружейных категорий и точка, через которую чувствуется логика Watch and Learn.</p></div><div class="node"><h4>Дамиана</h4><p>Рапиры, щиты и огнестрел требуют отдельного внимания, а не «как-нибудь по дороге».</p></div><div class="node"><h4>Унгка</h4><p>Ручная пушка и тяжелые пакеты закрываются ровнее, когда вы заранее приняли его роль в маршруте.</p></div></div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 5</b></div><ul class="phaseList"><li><label><input data-k="p5_story" type="checkbox">Продвинул сюжет до поздних фаз так, чтобы открыть перенос лагеря, нужные регионы и поздние окна</label></li><li><label><input data-k="p5_gear" type="checkbox">Подготовил кухню, улучшение экипировки и роли компаньонов перед тяжелым гриндом категорий</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Перенос лагеря в Пайлун</span><small>Сюжет</small></summary><div class="accBody"><p>Лагерь Серых Грив - это не декорация. Он вплетен в маршрут через ресурсы, расширения, наемников, экспедиции и позднюю структуру квестов, поэтому линия с переносом базы должна восприниматься как часть основного пути.</p><p>Практически ориентир такой: после <b>Homecoming</b> и квеста <b>Time to Face Justice</b> у вас открывается ветка <b>Reconstructing Pailune</b>, а вместе с ней и <b>Proud Returnee</b>. Если идти по истории инертно и не зафиксировать этот момент, легко уехать дальше по сюжету без важного системного апгрейда базы.</p></div></details><details class="acc"><summary><span>Shortcut в главе 12</span><small>Экономия</small></summary><div class="accBody"><p>Даже час-полтора экономии в таком маршруте - уже не мелочь. Полезный срез пути лучше знать заранее, а не после полного прохода главы.</p><p>По вашим материалам в <b>A Shadow in the Void</b> не нужно добросовестно проходить весь стандартный коридор по островам Бездны. Между <b>Spire of Clockwork</b> и <b>Drywind Valley</b> в русле реки лежит разбитый кубический корабль; простая головоломка внутри телепортирует вас сразу к <b>Dimensional Bonds</b> и отрезает от часа до двух реального времени.</p></div></details><details class="acc"><summary><span>Кухня, Refinement и роли героев</span><small>Системы</small></summary><div class="accBody"><p>Как только доступны улучшения, точильные камни, рецепты и отдельные роли Клиффа, Дамианы и Унгки, перестаньте воевать старой логикой «пройду силой». Этот блок окупается на мастериях и боссах.</p><p>Технически тут сходится сразу несколько обязательных систем: здоровье не восстанавливается само, значит еда - это базовый ресурс выживания; квест кузнеца <b>Turnali</b> открывает <b>Refinement</b>; патч 1.01.00 упрощает готовку через <b>Make Now</b>; а роли Дамианы и Унгки нужно принять заранее, иначе рапиры, огнестрел и ручная пушка останутся «на потом» и ударят по темпу уже в большом гринде.</p></div></details></div></div></section>
-<section class="scene section" id="s6" data-short="06" data-phase="Фаза 6/8" data-title="Большой гринд: исследование, шпили, бой и боссы" data-obj="Разбить громадный пакет категорий на понятные очереди вместо хаотичной зачистки всего мира подряд." data-risk="Метаться между Безднами, руинами, боссами и оружием без опорного порядка и уставать раньше, чем закрывается прогресс." data-gain="Самый тяжелый блок начинает выглядеть как серия управляемых подкатегорий." data-list="Expert Explorer|Conqueror of Spires|Navigator of the Stars|Unvanquished Strategist"><div class="card"><h2>6) Главный объем платины закрывается не рывком, а очередями</h2><p>После того как у вас поставлена карта и поднят лагерь, начинается настоящий марафон. Лучший способ не задохнуться - не «дочищать мир», а вести крупные пакеты в понятной очередности: сначала исследование, затем шпили и созвездия, потом мастерии и тактика, а уже на этой базе - боссы и экзотика.</p><div class="nodes"><div class="node"><h4>Expert Explorer</h4><p>Это не один трофей, а комбайн из Бездны, секретных мест, руин, святилищ и лабиринтов.</p></div><div class="node"><h4>Шпили и звезды</h4><p>Conqueror of Spires и Navigator of the Stars требуют отдельного настроя, а не случайных визитов «раз уж рядом».</p></div><div class="node"><h4>Unvanquished Strategist</h4><p>Оружие, тактика и специальные роли лучше закрывать по категориям, пока вы еще помните, чем именно заняты.</p></div></div><ul class="splits"><li><time>Очередь 1</time><b>Мир:</b> Abyss, секреты, руины, святилища, лабиринты.</li><li><time>Очередь 2</time><b>Шпили:</b> восемь крупных вертикальных точек и связанные с ними головоломки.</li><li><time>Очередь 3</time><b>Созвездия:</b> Constellation Helm, Gate of Truth и звездные сундуки.</li><li><time>Очередь 4</time><b>Бой:</b> мастерии оружия, тактические испытания, боссы и Watch and Learn.</li></ul><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 6</b></div><ul class="phaseList"><li><label><input data-k="p6_explore" type="checkbox">Разбил исследовательский пакет на отдельные очереди: Бездна, секреты, руины, святилища, лабиринты, шпили</label></li><li><label><input data-k="p6_combat" type="checkbox">Веду боевые категории системно: оружейные мастерии, тактика, спецоружие и боссы, а не все вперемешку</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Из чего реально состоит Expert Explorer</span><small>Мир</small></summary><div class="accBody"><p>По вашим материалам этот пакет сходится из нескольких крупных подкатегорий: около 40 зон Бездны, 60 секретных мест, 37 древних руин, 16 святилищ и 4 лабиринтов. Это несколько разных ритмов прохождения внутри одного большого блока.</p><p>Именно поэтому здесь полезно чередовать типы задач. После парящих островов Бездны удобно уходить в секретные места и руины на земле, а не упираться в один и тот же темп десятки часов подряд. Из конкретных ориентиров в исходниках упоминаются <b>Trial of the Sandscale</b>, <b>Threefold Fork</b> и <b>Peak of Enlightenment</b> - такие точки хорошо работают как якоря для длинных исследовательских сессий.</p></div></details><details class="acc"><summary><span>Шпили и Constellation Helm</span><small>Навигация</small></summary><div class="accBody"><p>Часть шпилей сюжетно открывается не сразу, поэтому не пытайтесь выбить весь пакет слишком рано. Constellation Helm удобнее вести отдельной очередью, а не между обычными вылазками.</p><p>Из практики ваших материалов: <b>Spire of the Stars</b> полноценно открывается только после главы 4, а внутри требует точного порядка символов на лифте - сверху <b>Hourglass</b>, затем <b>Circle</b>, ниже <b>Triangle</b> и внизу <b>Square</b>. Сам <b>Constellation Helm</b> нужен не только ради красивого неба: он ведет к звездным сундукам и открытию <b>Gate of Truth</b>, поэтому лучше выделять под него отдельный заход.</p></div></details><details class="acc"><summary><span>Боссы и Watch and Learn</span><small>Практика</small></summary><div class="accBody"><p>На боссах здесь важно не только выжить, но и читать бой. Если игра позволяет скопировать прием через удачный блок или уклонение, воспринимайте это как часть маршрута.</p><p>Это особенно важно, потому что по вашим материалам в игре 76 уникальных боссов, а пакет <b>Beast Slayer</b> и родственные категории любят проверять не просто урон, а понимание паттернов. Успешно снятые техники вроде <b>Nature's Echo</b> или <b>Force Palm Pulse</b> лучше воспринимать как добычу маршрута, а не как случайный бонус после тяжелого боя.</p></div></details></div></div></section>
-<section class="scene section" id="s7" data-short="07" data-phase="Фаза 7/8" data-title="Побочные системы: преступность, торговля, мини-игры, охота, маунты" data-obj="Добить большой бытовой блок трофеев без ощущения, что вы играете сразу в пять разных игр." data-risk="Свалить Shadowlord, Lord of Honor, торговлю, мини-игры и маунтов в один ком и потерять управление маршрутом." data-gain="Все небоевые категории начинают закрываться по чистым тематическим пачкам." data-list="Shadowlord|Lord of Honor|The Golden Merchant|Tamer of Legends"><div class="card"><h2>7) Бытовой блок платины надо уважать так же, как боевой</h2><p>Почти все, что не относится к сюжету и бою, удобно закрывать одним большим отдельным этапом. В Crimson Desert это не «мелочи напоследок», а тяжелые системы со своими маршрутами: преступность, честь фракции, торговля, мини-игры, охота и укрощение легендарных маунтов.</p><div class="grid2"><ul><li><b>Shadowlord:</b> маска, кражи, двери, флаги, повозки, свиньи и розыск.</li><li><b>Lord of Honor:</b> святилища Серых Грив, расширение лагеря, печати, наемники, Ironcrawler.</li><li><b>The Golden Merchant:</b> таверны, красильщики, ведьмы, торговые контракты и деньги лагеря.</li></ul><ul><li><b>True Gamer:</b> дуэли, силовые испытания и карточные игры.</li><li><b>Ultimate Hunter / Natural Collector:</b> фауна, ресурсы и живой мир, который нельзя закрыть парой случайных вылазок.</li><li><b>Tamer of Legends:</b> дикие кони и три легендарных маунта, о которых нельзя вспоминать только в самом конце.</li></ul></div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 7</b></div><ul class="phaseList"><li><label><input data-k="p7_systems" type="checkbox">Развел побочные системы по темам: преступность, честь, торговля и мини-игры, вместо хаотичных набегов</label></li><li><label><input data-k="p7_mounts" type="checkbox">Держу в отдельном плане охоту, природные категории и легендарных маунтов, а не оставляю их как «что-нибудь потом»</label></li></ul></div><div class="deep"><h3>Развернутое пояснение</h3><details class="acc"><summary><span>Shadowlord: сначала маска, потом преступления</span><small>Преступность</small></summary><div class="accBody"><p>Этот блок надо вести осознанно и в маске. Удобный подход - закрывать преступный пакет локально: один блок на скрытность и флаги, один на воровство и двери, один на скупщиков краденого и розыск.</p><p>Маска здесь не косметика: она прикрывает личность и спасает от резкого падения <b>Contribution Points</b>, пока вы поднимаете красные зоны поиска и бегаете от стражи. Из конкретных задач ваших исходников особенно удобно группируются ночные флаги, вскрытие 20 дверей, карманные кражи в трех городах, свиньи, повозки после <b>Strongbox with Wheels</b> и финальный розыск под арест цели с максимальным bounty.</p></div></details><details class="acc"><summary><span>Lord of Honor и Серые Гривы</span><small>Фракция</small></summary><div class="accBody"><p>Святилища Серых Грив, расширение лагеря, наемники, Signets и Ironcrawler лучше складываются в одну ветку влияния, когда карта уже раскрыта и лагерь живет полной жизнью.</p><p>Если раскладывать по делу, то здесь вам нужны 12 <b>Greymane Shrines</b>, 20 наемников в лагерь, второе расширение базы на <b>Howling Hill</b>, заезд на крыше <b>Ironcrawler</b> минимум на 2 километра и запас <b>Contribution</b> на одновременный выкуп региональных <b>Signets</b>. Когда это делается как единая фракционная кампания, блок ощущается вменяемо; когда вразнобой - превращается в кашу из хвостов.</p></div></details><details class="acc"><summary><span>Мини-игры, охота и легендарные маунты</span><small>Финал</small></summary><div class="accBody"><p><b>True Gamer</b> лучше закрывать короткими отдельными сессиями, а не между тяжелыми вылазками. То же самое с охотой и легендарными маунтами: это спокойный тематический блок, а не набор случайных хвостов.</p><p>Внутри этого пакета тоже есть конкретика: <b>True Gamer</b> включает дуэли, силовые испытания и карточные игры, а в камень-ножницы-бумагу из ваших заметок можно играть от паттерна после ничьей. Параллельно не забывайте, что <b>Tamer of Legends</b> упирается не только в диких коней, но и в трех легендарных маунтов - <b>Camora</b>, <b>Royler</b> и <b>Rokade</b>, а коллекционные пакеты по охоте и природе плохо закрываются без отдельного спокойного захода по фауне и ресурсам.</p></div></details></div></div></section>
-<section class="scene section" id="s8" data-short="08" data-phase="Фаза 8/8" data-title="Финальный аудит перед Pywel Legend" data-obj="Правильно диагностировать зависший хвост и не тратить еще десятки часов на неправильную категорию." data-risk="Считать, что любой недостающий прогресс надо просто погриндить еще, хотя причина может быть в неактивной категории, сломанном оружии или уже мертвой точке на карте." data-gain="Чистый финальный заход без лишней паники и пустых повторов." data-list="Final audit|Challenge check|Pywel Legend|35/35"><div class="card"><h2>8) Последний контроль перед платиной</h2><p>К финалу задача уже не в том, чтобы еще сильнее напрячься. Задача в другом: назвать проблему правильным именем. В Crimson Desert зависший хвост почти всегда лечится не упорством, а точной диагностикой.</p><ul><li><b>Если не движется испытание:</b> сначала проверьте, активирован ли нужный Артефакт Бездны и точно ли вы делаете действие в правильной категории.</li><li><b>Если зависло оружие:</b> убедитесь, что считаете прогресс на оригинальном нужном экземпляре, а не на позднем аналоге.</li><li><b>Если проблема в фортах или башнях:</b> смотрите, не выжгли ли вы карту слишком рано и не нужен ли отдельный сценарий с еще живыми точками.</li><li><b>Если пропали NPC или квест:</b> сначала проверяйте сюжетное окно и экспедиции, а не списывайте все на окончательный провал профиля.</li></ul><div class="code"><b>Быстрый аудит:</b> нет прогресса -> проверь категорию и артефакт -> проверь правильный предмет или оружие -> проверь, жива ли нужная точка на карте -> только потом повторяй действие.</div><div class="phase"><div class="phaseHead"><span>Чек-лист фазы</span><b>Фаза 8</b></div><ul class="phaseList"><li><label><input data-k="p8_audit" type="checkbox">Провел финальный аудит хвостов по типам проблемы, а не начал бессмысленный повтор всего подряд</label></li><li><label><input data-k="p8_platinum" type="checkbox">Закрыл профиль до конца и получил Pywel Legend</label></li></ul></div><div class="deep"><h3>Итог маршрута</h3><details class="acc"><summary><span>Финальная схема</span><small>Резюме</small></summary><div class="accBody"><p>Путь к платине складывается в понятную последовательность: сначала логистика и Артефакты Бездны, потом история и лагерь, затем большие исследовательские и боевые пакеты, после них - бытовые системы, а уже в конце - спокойный аудит хвостов.</p><p>На практике финальный чек лучше вести по типу поломки, а не по названию трофея. Если не движется челлендж - откройте <b>Journal - Challenges</b> и убедитесь, что категория вообще была активирована артефактом; если зависло оружие - проверьте, что вы фармите на оригинальном экземпляре, а не на позднем крафтовом аналоге; если уперлись в форты - ищите, не выжгли ли карту раньше времени.</p><p>Отдельный слой аудита - живые системы мира. Пропавшие NPC часто оказываются не «сломавшимся сейвом», а следствием сюжета, воспоминаний или активной экспедиции. Поэтому идеальный финал маршрута выглядит так: сначала диагностируете тип хвоста, потом идете в правильную подсистему, и только после этого повторяете нужное действие.</p></div></details></div><div class="checkWrap"><div class="checkHead"><span>Сводный чек-лист всех фаз</span><b id="done">0 / 16</b></div><p class="hint">Отмечайте только то, что реально уже закрыли или точно поставили на рельсы. Когда все 16 отметок активны, мини-приложение покажет финальную карточку прохождения.</p><ul class="todo"><li><label><input data-k="p1_route" type="checkbox">Понимаю, что маршрут строится вокруг порядка категорий<small>Фаза 1</small></label></li><li><label><input data-k="p1_basics" type="checkbox">Определил свой сценарий входа в гайд<small>Фаза 1</small></label></li><li><label><input data-k="p2_artifacts" type="checkbox">Принял правило Артефактов Бездны<small>Фаза 2</small></label></li><li><label><input data-k="p2_noBlind" type="checkbox">Не бегу в слепую зачистку до логистики<small>Фаза 2</small></label></li><li><label><input data-k="p3_forts" type="checkbox">Оставил нужные форты и башни под испытания<small>Фаза 3</small></label></li><li><label><input data-k="p3_weapons" type="checkbox">Не ломаю и не продаю важное уникальное оружие<small>Фаза 3</small></label></li><li><label><input data-k="p4_map" type="checkbox">Поставил карту и раннюю сеть перемещений<small>Фаза 4</small></label></li><li><label><input data-k="p4_economy" type="checkbox">Поднял ранний инвентарь, артефакты и базовую экономику<small>Фаза 4</small></label></li><li><label><input data-k="p5_story" type="checkbox">Провел сюжет до нужных поздних окон и переноса лагеря<small>Фаза 5</small></label></li><li><label><input data-k="p5_gear" type="checkbox">Подготовил кухню, улучшения и роли героев<small>Фаза 5</small></label></li><li><label><input data-k="p6_explore" type="checkbox">Развел большой исследовательский пакет по очередям<small>Фаза 6</small></label></li><li><label><input data-k="p6_combat" type="checkbox">Системно веду боевые категории<small>Фаза 6</small></label></li><li><label><input data-k="p7_systems" type="checkbox">Разделил преступность, честь, торговлю и мини-игры по темам<small>Фаза 7</small></label></li><li><label><input data-k="p7_mounts" type="checkbox">Держу под контролем охоту, природу и маунтов<small>Фаза 7</small></label></li><li><label><input data-k="p8_audit" type="checkbox">Провел финальный аудит хвостов<small>Фаза 8</small></label></li><li><label><input data-k="p8_platinum" type="checkbox">Pywel Legend получен<small>Фаза 8</small></label></li></ul><button class="rst" id="rst" type="button">Сбросить отметки</button></div></div></section>
+<section class="scene section" id="s1" data-short="01" data-phase="Фаза 1/8" data-title="Перед стартом: точка входа и сейв-сетка" data-obj="Понять, с какого состояния профиля вы заходите, разложить ручные сейвы и не сломать долгий гринд до первых крупных развилок." data-risk="Уйти в свободную зачистку, продвинуть сюжет без резервных слотов и потратить часы на действия, которые потом не засчитаются." data-gain="Чистый старт: понятна точка входа, расставлены сейвы под откат и отмечены самые опасные пакеты трофеев." data-list="Pywel Legend|испытания Operation|спецоружие|сейв-сетка">
+<div class="card">
+<h2>1) Перед стартом: что проверить на профиле и в сейвах</h2>
+<p class="warn">
+<b>Главная мысль:</b> первые часы здесь решают не сюжет, а порядок открытия систем. До свободной зачистки вам нужно понять, с какого состояния вы заходите в прохождение, и не дать игре съесть будущий прогресс по испытаниям.</p>
+<p class="warn">
+<b>Что держим в голове сразу:</b> на PlayStation 5 профиль закрывается через 35 трофеев вместе с <b>Pywel Legend</b>. На других платформах логика прохождения почти та же, но без платиновой плашки; рискованные окна и порядок категорий от этого не меняются.</p>
+<div class="nodes">
+<div class="node">
+<h4>Новый профиль</h4>
+<p>Идете фазы подряд: логистика, Артефакты Бездны, история, тяжелые пакеты и только потом бытовые хвосты.</p>
+</div>
+<div class="node">
+<h4>Середина игры</h4>
+<p>Сначала сверяете фазы 2 и 3: важно понять, открыты ли нужные категории испытаний и не выжжены ли удобные точки под фарм.</p>
+</div>
+<div class="node">
+<h4>Постсюжетные хвосты</h4>
+<p>Проверяете фазы 3, 6 и 8: именно там чаще всего вскрываются сломанный прогресс оружия, форты и незакрытые живые системы мира.</p>
 </div>
 </div>
-<div class="madeBy" aria-label="Copyright"><span>&copy; 2026 Made by</span><span class="madeByBrand"><img class="madeByMark" src="Logo.svg" alt="Logo"><img class="madeByWord" src="ACHIEVER.svg" alt="ACHIEVER"></span></div>
+<div class="grid2">
+<ul>
+<li>
+<b>Точка входа:</b> заранее решите, вы начинаете новый маршрут, спасаете середину прохождения или добиваете хвосты.</li>
+<li>
+<b>Язык трофеев:</b> английские названия держите под рукой там, где надо сверяться с игрой, журналом испытаний и внешними трекерами.</li>
+<li>
+<b>Главный принцип:</b> сначала активируете категории испытаний и логистику, потом уже запускаете массовый гринд.</li>
+</ul>
+<ul>
+<li>
+<b>Ориентир по времени:</b> сюжет длинный, а полный профиль легко уходит в 300-400 часов, если потерять порядок действий.</li>
+<li>
+<b>Условно рискованные пакеты:</b> испытания ветки Operation, спецоружие и часть фортов лучше закрывать в удобное сюжетное окно, а не оставлять на потом.</li>
+<li>
+<b>Сейвы под откат:</b> держите минимум три ручных слота: рабочий, резерв перед рискованным испытанием и дальний сюжетный якорь перед большим окном необратимых изменений.</li>
+<li>
+<b>После сюжета есть свободный режим:</b> хвосты добивать можно, но повторов квестов нет, поэтому ручные сейвы все равно остаются страховкой, а не перестраховкой.</li>
+</ul>
+</div>
+<div class="tags">
+<span>Артефакты Бездны</span>
+<span>Испытания Operation</span>
+<span>Сейвы под откат</span>
+<span>Порядок зачистки</span>
+</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 1</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p1_route" type="checkbox">Зафиксировал главное правило: до массового гринда сначала открываю нужные категории испытаний и базовую логистику</label>
+</li>
+<li>
+<label>
+<input data-k="p1_basics" type="checkbox">Определил свою точку входа и разложил ручные сейвы под рабочий прогресс, рискованные окна и дальний откат</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Ключевые пакеты трофеев</h3>
+<details class="acc">
+<summary>
+<span>История и база профиля</span>
+<small>Старт</small>
+</summary>
+<div class="accBody">
+<p>
+<b>Pywel Legend</b> - это не отдельная активность, а финальный флажок на весь профиль PS5. Сюжетный каркас держится на <b>Novice Adventurer</b>, <b>Master Camper</b>, <b>Protector of Pailune</b>, <b>Expert Storyteller</b> и <b>Proud Returnee</b>.</p>
+<p>Важно понимать ритм: первые четыре трофея вы в основном получаете по истории, а <b>Proud Returnee</b> уже требует не просто пройти главы, а довести лагерь Серых Грив до переезда в Пайлун. То есть даже «сюжетный пакет» здесь частично завязан на лагерь, ресурсы и позднее окно после седьмой главы.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Исследование континента</span>
+<small>Мир</small>
+</summary>
+<div class="accBody">
+<p>
+<b>Expert Explorer</b> - большой пакет мира, куда сходятся Бездна, секретные места, древние руины, святилища и лабиринты. Отдельно идут <b>Conqueror of Spires</b> и <b>Navigator of the Stars</b>.</p>
+<p>Практически это несколько разных мини-кампаний внутри одной большой: около 40 зон Бездны, 60 секретных мест, 37 руин, 16 святилищ и 4 лабиринта. У них разный ритм, поэтому полезнее вести их очередями, а не воспринимать как один бесконечный список галочек.</p>
+<p>Шпили и созвездия тоже лучше держать рядом, но отдельно в голове: часть шпилей сюжетно закрыта, а звездный пакет упирается в <b>Constellation Helm</b>, Gate of Truth и сундуки по небесным подсказкам, а не в случайные вылазки «раз уж был рядом».</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Бой и тяжелые испытания</span>
+<small>Гринд</small>
+</summary>
+<div class="accBody">
+<p>
+<b>Unvanquished Strategist</b>, <b>Brilliant Tactician</b>, <b>Battlefield Conqueror</b>, <b>Relentless Warrior</b>, <b>Grand Collector of Arms</b> и <b>Master of Artillery</b> - главные поглотители времени, если прийти к ним без фундамента.</p>
+<p>Этот блок нельзя брать наскоком: здесь 64 испытания оружейного мастерства, отдельные категории на тактику, большие баталии, спецоружие и ручную пушку. Самая частая ошибка - прыгать между Клиффом, Дамианой и Унгкой без порядка и терять понимание, какая категория вообще сейчас должна двигаться.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Побочные системы</span>
+<small>Лайфстайл</small>
+</summary>
+<div class="accBody">
+<p>
+<b>Shadowlord</b>, <b>Lord of Honor</b>, <b>The Golden Merchant</b>, <b>True Gamer</b>, <b>Ultimate Hunter</b>, <b>Natural Collector</b>, <b>Tamer of Legends</b> удобнее добивать отдельным большим блоком, когда карта уже раскрыта.</p>
+<p>Это важный психологический момент маршрута: бытовые трофеи здесь совсем не «фоновые». Преступность требует маски и локальных серий действий, торговля - логистики и денег лагеря, мини-игры - отдельных спокойных сессий, а маунты и охота плохо закрываются по остаточному принципу «когда-нибудь потом».</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Что держать под контролем с первой половины игры</span>
+<small>Контроль</small>
+</summary>
+<div class="accBody">
+<p><b>Испытания Operation и спецоружие:</b> не относитесь к ним как к мусорным хвостам. У таких задач часто есть живое окно: нужная вражеская точка, оригинальный экземпляр оружия, правильная глава или еще не выжженный форт.</p>
+<p><b>Подозрительный прогресс:</b> если категория не засчитывается, сразу идите в журнал испытаний <b>Journal - Challenges</b> и проверяйте, активирована ли она артефактом, верный ли тип убийства вы делаете и не уперлись ли в патч-чувствительную механику. Час проверки здесь дешевле десяти часов пустого фарма.</p>
+<p><b>Сейв-дисциплина:</b> отдельный слот держите перед большими зачистками, тяжелыми баталиями и любым куском, где можно навсегда потерять удобную экосистему врагов или предмет под трофей.</p>
+<p><b>Финал не отменяет сейвы:</b> после истории мир остается открыт, но повторного прохождения сюжетных и фракционных квестов нет. Если нужен откат под редкое испытание, лучше иметь его заранее, чем надеяться на послесюжетную магию.</p>
+</div>
+</details>
+<div class="deep trophyGuide">
+<h3>Атлас трофеев по маршруту</h3>
+<p class="trophyIntro">Ниже не отдельный список ради галочки, а быстрый компас: какой трофей за что отвечает и на какой фазе его удобно держать в голове. Иконки и названия сверены по основной дорожной карте трофеев.</p>
+<div class="trophySummary">
+<span>1 платиновый</span>
+<span>4 золотых</span>
+<span>10 серебряных</span>
+<span>20 бронзовых</span>
+<span>35 трофеев PS5</span>
+</div>
+<div id="trophyAtlas" class="trophyMount"></div>
+<div class="trophyGuideLegacy" hidden>
+<details class="acc">
+<summary>
+<span>Профиль и сюжет</span>
+<small>6 трофеев</small>
+</summary>
+<div class="accBody">
+<div class="trophyGrid">
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/00-pywel-legend.png" alt="Pywel Legend">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Pywel Legend</h4>
+<span class="trophyType trophyType-platinum"><img src="assets/trophies/type-platinum.png" alt="Platinum">Platinum</span>
+</div>
+<p>Финал профиля: появится только после остальных 34 трофеев.</p>
+<small>Финальный аудит</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/01-novice-adventurer.png" alt="Novice Adventurer">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Novice Adventurer</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Автоматический стартовый трофей за 1 главу.</p>
+<small>Фаза 5 / история</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/02-master-camper.png" alt="Master Camper">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master Camper</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Автоматически прилетает при активации лагеря на Howling Hill.</p>
+<small>Фаза 5 / лагерь</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/28-protector-of-pailune.png" alt="Protector of Pailune">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Protector of Pailune</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>Сюжетный рубеж после Chapter 7 и Time to Face Justice.</p>
+<small>Фаза 5 / история</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/21-proud-returnee.png" alt="Proud Returnee">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Proud Returnee</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>Переезд лагеря в Пайлун и ветка Reconstructing Pailune.</p>
+<small>Фаза 5 / лагерь</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/31-expert-storyteller.png" alt="Expert Storyteller">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Expert Storyteller</h4>
+<span class="trophyType trophyType-gold"><img src="assets/trophies/type-gold.png" alt="Gold">Gold</span>
+</div>
+<p>Золото за весь сюжет: 12 глав плюс пролог и эпилог.</p>
+<small>Фаза 5 / финал сюжета</small>
+</div>
+</article>
+</div>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Исследование и древние зоны</span>
+<small>8 трофеев</small>
+</summary>
+<div class="accBody">
+<div class="trophyGrid">
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/03-maze-pathfinder.png" alt="Maze Pathfinder">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Maze Pathfinder</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все 4 лабиринта. Удобнее брать уже с нормальной логистикой.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/04-conqueror-of-spires.png" alt="Conqueror of Spires">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Conqueror of Spires</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все 8 шпилей. Часть маршрута открывается только позже по сюжету.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/05-navigator-of-the-stars.png" alt="Navigator of the Stars">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Navigator of the Stars</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Созвездия, Gate of Truth и небесные сундуки.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/22-pilgrim-of-wonders.png" alt="Pilgrim of Wonders">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Pilgrim of Wonders</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>60 секретных мест. Не оставляйте их на один огромный добор.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/23-puzzle-solver.png" alt="Puzzle Solver">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Puzzle Solver</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>37 древних руин и пазлы на полный зачёт.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/24-lightbringer.png" alt="Lightbringer">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Lightbringer</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>16 святилищ. Хорошо ложатся в отдельную очередь зачистки.</p>
+<small>Фаза 6 / мир</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/32-conqueror-of-the-abysses.png" alt="Conqueror of the Abysses">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Conqueror of the Abysses</h4>
+<span class="trophyType trophyType-gold"><img src="assets/trophies/type-gold.png" alt="Gold">Gold</span>
+</div>
+<p>Все испытания Бездны после раннего открытия категорий.</p>
+<small>Фаза 6 / Бездна</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/33-expert-explorer.png" alt="Expert Explorer">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Expert Explorer</h4>
+<span class="trophyType trophyType-gold"><img src="assets/trophies/type-gold.png" alt="Gold">Gold</span>
+</div>
+<p>Главное мировое золото: 9 подкатегорий исследования в одном пакете.</p>
+<small>Фаза 6 / большой мир</small>
+</div>
+</article>
+</div>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Мастерство и боевой гринд</span>
+<small>14 трофеев</small>
+</summary>
+<div class="accBody">
+<div class="trophyGrid">
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/06-master-of-swords.png" alt="Master of Swords">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Swords</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все мечевые испытания.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/07-master-of-shields.png" alt="Master of Shields">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Shields</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания со щитом.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/08-master-of-bows.png" alt="Master of Bows">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Bows</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания с луком.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/09-master-of-spears.png" alt="Master of Spears">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Spears</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания с копьями.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/10-master-of-two-handed-weapons.png" alt="Master of Two-Handed Weapons">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Two-Handed Weapons</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания с двуручами.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/11-master-of-artillery.png" alt="Master of Artillery">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Artillery</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все пушечные испытания; держите в голове багнутые нюансы.</p>
+<small>Фаза 3-6 / пушка</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/12-master-of-rapiers.png" alt="Master of Rapiers">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Rapiers</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания рапиры и щита.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/13-master-of-firearms.png" alt="Master of Firearms">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Master of Firearms</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все испытания огнестрела.</p>
+<small>Фаза 6 / мастерство</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/14-relentless-warrior.png" alt="Relentless Warrior">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Relentless Warrior</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>10 тренировочных испытаний.</p>
+<small>Фаза 6 / тренировка</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/15-battlefield-conqueror.png" alt="Battlefield Conqueror">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Battlefield Conqueror</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>10 боевых испытаний и живые боевые зоны.</p>
+<small>Фаза 3-6 / battle</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/16-brilliant-tactician.png" alt="Brilliant Tactician">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Brilliant Tactician</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>10 испытаний категории Operation; именно здесь больше всего условно рискованных окон.</p>
+<small>Фаза 3-6 / ветка Operation</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/25-grand-collector-of-arms.png" alt="Grand Collector of Arms">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Grand Collector of Arms</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>10 испытаний особого оружия: не ломайте и не отдавайте важные стволы.</p>
+<small>Фаза 3-6 / спецоружие</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/18-beast-slayer.png" alt="Beast Slayer">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Beast Slayer</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Испытания ветки New Power и боссовые техники.</p>
+<small>Фаза 6 / боссы</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/34-unvanquished-strategist.png" alt="Unvanquished Strategist">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Unvanquished Strategist</h4>
+<span class="trophyType trophyType-gold"><img src="assets/trophies/type-gold.png" alt="Gold">Gold</span>
+</div>
+<p>Главное боевое золото: все 10 подкатегорий мастерства.</p>
+<small>Фаза 6 / большой гринд</small>
+</div>
+</article>
+</div>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Бытовые системы и живая карта</span>
+<small>7 трофеев</small>
+</summary>
+<div class="accBody">
+<div class="trophyGrid">
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/17-the-golden-merchant.png" alt="The Golden Merchant">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>The Golden Merchant</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Все торговые испытания: деньги, контракты и логистика.</p>
+<small>Фаза 7 / торговля</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/19-shadowlord.png" alt="Shadowlord">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Shadowlord</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Ветка Above the Law: маска, кражи, двери, флаги, розыск.</p>
+<small>Фаза 7 / преступность</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/20-lord-of-honor.png" alt="Lord of Honor">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Lord of Honor</h4>
+<span class="trophyType trophyType-bronze"><img src="assets/trophies/type-bronze.png" alt="Bronze">Bronze</span>
+</div>
+<p>Ветка Challenges and Changes; в старых материалах может называться Greymane's Vow.</p>
+<small>Фаза 7 / Серые Гривы</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/26-tamer-of-legends.png" alt="Tamer of Legends">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Tamer of Legends</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>Испытания верховой езды и легендарные маунты.</p>
+<small>Фаза 7 / маунты</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/27-true-gamer.png" alt="True Gamer">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>True Gamer</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>Все 5 подкатегорий мини-игр; часть удобнее делать после знакомства с системами.</p>
+<small>Фаза 7 / мини-игры</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/29-ultimate-hunter.png" alt="Ultimate Hunter">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Ultimate Hunter</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>11 охотничьих испытаний.</p>
+<small>Фаза 7 / охота</small>
+</div>
+</article>
+<article class="trophyCard">
+<img class="trophyCardIcon" src="assets/trophies/30-natural-collector.png" alt="Natural Collector">
+<div class="trophyCardBody">
+<div class="trophyCardTop">
+<h4>Natural Collector</h4>
+<span class="trophyType trophyType-silver"><img src="assets/trophies/type-silver.png" alt="Silver">Silver</span>
+</div>
+<p>12 бытовых испытаний: ???-предметы, ресурсы, знания и мирная фауна.</p>
+<small>Фаза 7 / life</small>
+</div>
+</article>
+</div>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s2" data-short="02" data-phase="Фаза 2/8" data-title="Правило N1: артефакты раньше гринда" data-obj="Не дать игре украсть десятки часов через неретроактивный прогресс испытаний." data-risk="Сначала качать оружие, чистить форты и бегать по побочкам, а потом обнаружить, что нужная категория испытаний вообще не была активирована." data-gain="Все будущие действия начинают записываться туда, куда нужно для трофеев." data-list="Артефакты Бездны|Guiding Light|Скрытые колокола|Abyss Nexus">
+<div class="card">
+<h2>2) Запечатанные Артефакты Бездны - это фундамент, а не коллекционный хвост</h2>
+<p>Самая дорогая ошибка в Crimson Desert - начать играть «естественно» и оставить Артефакты Бездны на потом. Почти весь большой гринд в этой игре завязан на категорию испытаний, а категории часто не считают прогресс задним числом.</p>
+<div class="nodes">
+<div class="node">
+<h4>141 артефакт</h4>
+<p>Это не косметика, а включатель больших пакетов испытаний по миру, бою и побочным системам.</p>
+</div>
+<div class="node">
+<h4>Guiding Light</h4>
+<p>Ищите артефакты не вслепую: свет, белое свечение и значок куба на мини-карте - ваши базовые инструменты.</p>
+</div>
+<div class="node">
+<h4>Сначала дороги</h4>
+<p>Большинство алтарей удобно собирать вдоль главных маршрутов после нормального раскрытия карты.</p>
+</div>
+</div>
+<div class="code">
+<b>Короткая формула фазы:</b> сначала открыть карту и нужный артефакт категории - потом уже делать убийства, зачистки и специфические действия под трофей.</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 2</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p2_artifacts" type="checkbox">Принял правило: перед большим гриндом сначала активирую нужные категории испытаний через Артефакты Бездны</label>
+</li>
+<li>
+<label>
+<input data-k="p2_noBlind" type="checkbox">Не иду в свободную зачистку мира, пока не рассеял туман войны и не поставил базовую сеть перемещений</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Почему прогресс нельзя откладывать</span>
+<small>Основа</small>
+</summary>
+<div class="accBody">
+<p>Главная угроза здесь не один безвозвратно пропускаемый трофей, а полезные действия, сделанные слишком рано. Если категория испытаний еще не открыта, профиль может просто не принять нужный зачет.</p>
+<p>Классический провал из ваших исходников - часы, вложенные в стрельбу, копья или форты до активации нужного артефакта. Пока вы не подобрали и не включили предмет в инвентаре, а цепочка не появилась в журнале испытаний <b>Journal - Challenges</b>, игра часто считает, что нужной категории для вас еще не существует.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Что открыть до свободной игры</span>
+<small>Логистика</small>
+</summary>
+<div class="accBody">
+<p>Прежде чем жить в открытом мире как в песочнице, лучше как можно раньше активировать максимум Скрытых Колоколов, поставить сеть <b>Abyss Nexus</b> и только потом системно собирать артефакты. Важно: <b>Pailune Bell</b> сюжетно закрыт на старте, так что формулу «сразу открыть все 8» для ранней игры лучше не повторять без оговорки.</p>
+<p>Сами артефакты удобнее искать не по наитию, а через короткий ритуал: идете вдоль дорог, даете <b>Guiding Light</b>, смотрите на белое свечение ночью и держите в поле зрения фиолетовый куб на мини-карте. По исходникам радиус подсветки около 30 метров, а глобальная карта тут не помогает, так что без этой рутины легко пробежать мимо.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Какие пакеты вы этим включаете</span>
+<small>Пакеты</small>
+</summary>
+<div class="accBody">
+<p>По вашим исходникам через Артефакты Бездны рано или поздно завязаны оружейное мастерство, секретные места, исследование Бездны, руины, святилища, боевые испытания, шпили, торговля, преступность и часть мини-игр.</p>
+<p>Если говорить совсем приземленно, артефакты включают учет для самых дорогих категорий: 64 оружейных испытаний, 60 секретных мест, 40 зон Бездны, 37 руин, 16 святилищ, пакетов на шпили, преступность, торговлю и даже отдельные «игры разума». Поэтому мыслить ими как коллекционкой нельзя: это ваш рубильник прогресса.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s3" data-short="03" data-phase="Фаза 3/8" data-title="Три красные зоны маршрута" data-obj="Не потерять темп на фортах, уникальном оружии и проблемных испытаниях." data-risk="Рано зачистить нужные точки, продать или сломать нужный ствол, а потом пытаться чинить это уже на умирающем профиле." data-gain="Самые неприятные ловушки обезврежены заранее, до массового гринда." data-list="Battlefield Conqueror|Grand Collector of Arms|Master of Artillery|Bismuth Spear">
+<div class="card">
+<h2>3) Формально ничего нельзя безвозвратно пропустить. Практически - есть несколько мест, где проще перестраховаться заранее</h2>
+<p>Платина чаще ломается не на боссе, а на неверном порядке действий. Самые опасные зоны здесь - ранняя зачистка фортов, обращение с уникальным оружием и отдельные проблемные испытания ручной пушки.</p>
+<div class="nodes">
+<div class="node">
+<h4>Не чистите все форты рано</h4>
+<p>Для части боевых и артиллерийских испытаний нужны живые башни, укрепления и рабочие точки на карте.</p>
+</div>
+<div class="node">
+<h4>Не продавайте уникальное оружие</h4>
+<p>Пока не закрыли связанные испытания, уникальный ствол - это рабочий инструмент, а не мусор.</p>
+</div>
+<div class="node">
+<h4>Barraging Cannon II / IV</h4>
+<p>В ранних материалах второе пушечное испытание стабильно всплывает как багнутое, а четвертое долго оставалось плохо документированным, так что весь пушечный пакет лучше вести осторожно.</p>
+</div>
+</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 3</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p3_forts" type="checkbox">Не превращаю раннюю зачистку мира в тотальный вынос всех фортов и сторожевых башен до нужных боевых испытаний</label>
+</li>
+<li>
+<label>
+<input data-k="p3_weapons" type="checkbox">Не продаю и не вырабатываю уникальное оружие до завершения привязанных к нему испытаний, особенно у ломких копий</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Форты и Battlefield Conqueror</span>
+<small>Риск</small>
+</summary>
+<div class="accBody">
+<p>Пока вы не добрались до системного закрытия боевых категорий, мир должен оставаться чуть-чуть живым. Не делайте из ранней карты стерильную пустыню без башен и укреплений.</p>
+<p>По вашим заметкам это особенно важно для <b>Battlefield Conqueror</b> и части <b>Master of Artillery</b>: испытания вроде <b>Sinking Fort</b> и поздних пушечных задач требуют реальных сторожевых башен и фортификаций. Если заранее освободить все крупные точки, потом придется не фармить, а искать, где вообще еще осталась рабочая цель.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Grand Collector of Arms и ломкое оружие</span>
+<small>Критично</small>
+</summary>
+<div class="accBody">
+<p>
+<b>Bismuth Spear</b> и похожие экземпляры со скрытой прочностью могут сломаться до завершения нужного испытания. Нашли ломкое уникальное оружие - сразу смотрите привязанное испытание и закрывайте его в ближайшее удобное окно.</p>
+<p>Здесь опасны сразу две вещи: продажа и износ. Проданные уникальные предметы действительно лучше не отпускать до закрытия испытаний, но формулировку про «окончательную блокировку прогресса» лучше смягчить: часть экземпляров игроки возвращают через выкуп, экспедиции или повторный дроп. Что выглядит подтвержденным лучше всего: прогресс часто считается именно на оригинальном экземпляре, а поздняя крафтовая версия вроде <b>Kuku Bismuth Spear</b> или улучшенного аналога для Lightning Spear может не засчитываться. Для читателя честнее называть это не гарантированной поломкой сейва, а дорогой зоной риска, которую проще не создавать.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Operation 2 и Operation 7 лучше не тащить в финал</span>
+<small>Приоритет</small>
+</summary>
+<div class="accBody">
+<p>Если нужен короткий список того, что в пакете Operation лучше закрывать пораньше, то первым делом смотрите на <b>Hidden Banner Pike</b> и <b>Disruption</b>. Формально это не история про безвозвратно пропускаемый трофей, но оба испытания сидят на врагах, которых по ходу сюжета и зачистки мира становится заметно неудобнее фармить.</p>
+<p><b>Hidden Banner Pike</b> просит убить 10 солдат с banner pike в Демениссе за 30 минут, и удобнее всего гонять это окно через точки вроде <b>Southern Court</b> с быстрым обновлением врагов от ближайшего <b>Abyss Nexus</b>; тот же принцип работает для <b>Western Court</b> и <b>Eastern Court</b>, пока вы не освободили их окончательно. <b>Disruption</b> завязан на 10 <b>One-Eyed Jackals</b> в <b>Black Bear's Leather Helm</b>, который нормально входит в маршрут только с 8 главы. Практический вывод простой: как только у вас в руках есть нужный шлем и еще жива удобная вражеская экология региона, закрывайте испытание сразу, а не оставляйте на послесюжетный мусорный круг.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Если пушечные испытания не засчитываются</span>
+<small>Кейс</small>
+</summary>
+<div class="accBody">
+<p>По ранним трофейным материалам после релиза как забагованное чаще всего всплывает <b>Barraging Cannon 2</b> - убийства из Charged Shot не засчитываются. <b>Barraging Cannon 4</b> при этом не всегда маркируют как баг, но нормальное решение для него долго оставалось мутным, что для маршрута тоже красный флаг.</p>
+<p>Если уперлись именно в IV, пользовательский обход со стражей у Гернанда можно держать как запасной вариант, но воспринимать его лучше как запасной маршрут, а не как подтвержденное официальное решение. Практический вывод простой: пушечный пакет зависит от версии патча сильнее, чем это видно на сводной странице, поэтому при любом странном трекинге сразу закладывайте сценарий «материал еще сырой или задача забагована» и не тратьте часы на слепой фарм.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s4" data-short="04" data-phase="Фаза 4/8" data-title="Первые 30 часов: карта, колокола, артефакты, инвентарь" data-obj="Подготовить континент к длинному прохождению и не утонуть в бессмысленных крюках." data-risk="Играть по наитию, терять темп на логистике и возвращаться в каждый регион по нескольку раз." data-gain="Карта начинает работать как маршрут, а не как помеха: быстрые точки, открытый туман, растущий инвентарь и нормальная база ресурсов." data-list="Скрытые колокола|Abyss Nexus|Requests|Турнир лучников">
+<div class="card">
+<h2>4) Ранний этап - это инфраструктура, а не хаотичные побочки</h2>
+<p>В первые 10-30 часов лучше всего работают четыре задачи: снять туман войны, открыть сеть перемещений, начать последовательный сбор артефактов и не задушить себя инвентарем.</p>
+<ul class="splits">
+<li>
+<time>1-10ч</time>
+<b>Скрытые колокола:</b> после пролога держите курс на все доступные колокола и первые <b>Abyss Nexus</b>; <b>Pailune Bell</b> все равно доберете позже по сюжету.</li>
+<li>
+<time>10-20ч</time>
+<b>Артефакты по дорогам:</b> начинайте системный сбор вдоль главных маршрутов.</li>
+<li>
+<time>После 2 главы</time>
+<b>Инвентарь:</b> берите задания <b>Requests</b> в Гернанде, приоритезируйте фракционные квесты с наградой <b>Medium Bags</b>, покупайте сумки и не игнорируйте слоты.</li>
+<li>
+<time>Параллельно</time>
+<b>Экономика:</b> деньги лучше делать на ресурсах и торговле, а не на самообмане с турниром лучников <b>Archery Contest</b>.</li>
+</ul>
+<div class="tags">
+<span>8 скрытых колоколов</span>
+<span>Abyss Nexus</span>
+<span>Задания Requests</span>
+<span>Инвентарь</span>
+<span>Ранняя экономика</span>
+</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 4</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p4_map" type="checkbox">Развернул раннюю логистику: туман войны, первые Nexus и понятный маршрут между регионами</label>
+</li>
+<li>
+<label>
+<input data-k="p4_economy" type="checkbox">Начал сбор артефактов и параллельно решил ранний инвентарь и базовую экономику без пустого фарма</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Почему скрытые колокола идут так рано</span>
+<small>Карта</small>
+</summary>
+<div class="accBody">
+<p>Если оставить туман войны надолго, любая следующая категория превращается в повторную экспедицию в те же регионы. Колокола окупаются потом десятки раз.</p>
+<p>По вашим материалам на восемь колоколов легко уходит больше пяти часов, но это один из самых выгодных ранних вкладов во всей платине. После такого захода карта перестает быть черной кашей, и вы уже не ездите во второй или третий раз в тот же регион только потому, что когда-то пробежали его вслепую.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Abyss Nexus и удобный каркас мира</span>
+<small>Логистика</small>
+</summary>
+<div class="accBody">
+<p>Быстрые перемещения здесь позволяют собирать длинные маршруты по артефактам, шпилям, лагерям и побочным системам без ощущения, что вы каждый раз начинаете новую игру.</p>
+<p>Полезная деталь из исходников: узлы часто сидят внутри больших белых зон поиска с вопросительным знаком, а точную точку помогает вытянуть <b>Guiding Light</b>. Поэтому логика ранней фазы простая: увидели новый белый пузырь на карте - не откладывайте, потому что каждый открытый <b>Abyss Nexus</b> потом сэкономит десятки мелких, но очень дорогих возвратов.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Что считать настоящей подготовкой профиля</span>
+<small>25+ часов</small>
+</summary>
+<div class="accBody">
+<p>У этой платины длинный технический пролог. До комфортного трофейного темпа легко уходит <b>25+ часов</b> на чистую подготовку профиля: колокола, сеть <b>Abyss Nexus</b>, артефакты, стартовый капитал, инструменты и первые нормальные улучшения.</p>
+<p>Практически это значит три вещи. Во-первых, не тяните с покупкой <b>Logging Axe</b> и <b>Pickaxe</b> у снабженца в Гернанде, чтобы сразу включить древесину, руду и понятный денежный цикл. Во-вторых, не тащите сырую экипировку в длинный маршрут: ранняя цель здесь простая - довести рабочий комплект хотя бы до 5-6 уровня улучшения <b>Refinement</b>, чтобы история, побочки и первые тяжелые категории перестали съедать лишние ресурсы. В-третьих, не пропускайте фракционные квесты на расширение инвентаря: быстрый выигрыш по <b>Medium Bags</b> окупается почти в каждой длинной вылазке.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Турнир лучников: нужен, но не как кошелек</span>
+<small>Нюанс</small>
+</summary>
+<div class="accBody">
+<p>По вашим материалам 80 медных монет - это вход, а не награда. Турнир может быть нужен по испытаниям, но стабильным фармом денег он не является.</p>
+<p>Если трофейный маршрут все-таки приводит вас туда рано, держите два практических нюанса: после 4-5 поражений подряд без выхода из диалога ИИ начинает стрелять медленнее, а на PS5 режим производительности <b>Performance Mode</b> заметно ломает ему тайминги. Для реальных денег в начале лучше работать через задания <b>Requests</b> в Гернанде, покупку сумок, добычу <b>Scolecite</b> и <b>Azurite</b> и торговлю краденым скотом, а не пытаться превратить турнир в банк.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s5" data-short="05" data-phase="Фаза 5/8" data-title="Сюжет, лагерь и боеготовность" data-obj="Провести основную кампанию так, чтобы она открывала новые пакеты трофеев и не ломала поздний гринд." data-risk="Пройти историю слишком инертно, не используя лагерь, компаньонов, кулинарию и поздние сюжетные окна." data-gain="Открытый Пайлун, переезд лагеря, полезные системные апгрейды и готовность к тяжелым категориям." data-list="Proud Returnee|Reconstructing Pailune|A Shadow in the Void|Улучшение экипировки">
+<div class="card">
+<h2>5) Сюжет здесь нужен не только ради титров</h2>
+<p>Середина прохождения - это момент, когда история должна начать кормить маршрут. Важнее всего здесь три вещи: не забыть про перенос лагеря, подготовить бытовую боеготовность через кухню и улучшения, а также не пропустить полезный срез в двенадцатой главе.</p>
+<ul class="splits">
+<li>
+<time>Глава 7</time>
+<b>Homecoming:</b> после нее и квеста <b>Time to Face Justice</b> открывается <b>Reconstructing Pailune</b> и трофей <b>Proud Returnee</b>.</li>
+<li>
+<time>Глава 12</time>
+<b>A Shadow in the Void:</b> вместо стандартного длинного маршрута используйте срез через разбитый корабль в русле реки Деменисса.</li>
+<li>
+<time>Параллельно</time>
+<b>Кулинария:</b> еда - это не роскошь, а главный бытовой слой выживания.</li>
+<li>
+<time>После кузнеца</time>
+<b>Улучшение экипировки:</b> как только доступен <b>Refinement</b>, перестаньте ходить на тяжелые категории «как есть».</li>
+</ul>
+<div class="nodes">
+<div class="node">
+<h4>Клифф</h4>
+<p>База большинства оружейных категорий и точка, через которую чувствуется логика копирования приемов <b>Watch and Learn</b>.</p>
+</div>
+<div class="node">
+<h4>Дамиана</h4>
+<p>Рапиры, щиты и огнестрел требуют отдельного внимания, а не «как-нибудь по дороге».</p>
+</div>
+<div class="node">
+<h4>Унгка</h4>
+<p>Ручная пушка и тяжелые пакеты закрываются ровнее, когда вы заранее приняли его роль в маршруте.</p>
+</div>
+</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 5</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p5_story" type="checkbox">Продвинул сюжет до поздних фаз так, чтобы открыть перенос лагеря, нужные регионы и поздние окна</label>
+</li>
+<li>
+<label>
+<input data-k="p5_gear" type="checkbox">Подготовил кухню, улучшение экипировки и роли компаньонов перед тяжелым гриндом категорий</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Перенос лагеря в Пайлун</span>
+<small>Сюжет</small>
+</summary>
+<div class="accBody">
+<p>Лагерь Серых Грив - это не декорация. Он вплетен в маршрут через ресурсы, расширения, наемников, экспедиции и позднюю структуру квестов, поэтому линия с переносом базы должна восприниматься как часть основного пути.</p>
+<p>Практически ориентир такой: после <b>Homecoming</b> и квеста <b>Time to Face Justice</b> у вас открывается ветка <b>Reconstructing Pailune</b>, а вместе с ней и <b>Proud Returnee</b>. Если идти по истории инертно и не зафиксировать этот момент, легко уехать дальше по сюжету без важного системного апгрейда базы.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Срез в главе 12</span>
+<small>Экономия</small>
+</summary>
+<div class="accBody">
+<p>Даже час-полтора экономии в таком маршруте - уже не мелочь. Полезный срез пути лучше знать заранее, а не после полного прохода главы.</p>
+<p>По вашим материалам в <b>A Shadow in the Void</b> не нужно добросовестно проходить весь стандартный коридор по островам Бездны. Между <b>Spire of Clockwork</b> и <b>Drywind Valley</b> в русле реки лежит разбитый кубический корабль; простая головоломка внутри телепортирует вас сразу к <b>Dimensional Bonds</b> и отрезает от часа до двух реального времени.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Кухня, улучшение экипировки и роли героев</span>
+<small>Системы</small>
+</summary>
+<div class="accBody">
+<p>Как только доступны улучшения, точильные камни, рецепты и отдельные роли Клиффа, Дамианы и Унгки, перестаньте воевать старой логикой «пройду силой». Этот блок окупается на мастериях и боссах.</p>
+<p>Технически тут сходится сразу несколько обязательных систем: здоровье не восстанавливается само, значит еда - это базовый ресурс выживания; квест кузнеца <b>Turnali</b> открывает систему улучшения <b>Refinement</b>; патч 1.01.00 упрощает готовку через кнопку <b>Make Now</b>; а роли Дамианы и Унгки нужно принять заранее, иначе рапиры, огнестрел и ручная пушка останутся «на потом» и ударят по темпу уже в большом гринде.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s6" data-short="06" data-phase="Фаза 6/8" data-title="Большой гринд: исследование, шпили, бой и боссы" data-obj="Разбить громадный пакет категорий на понятные очереди вместо хаотичной зачистки всего мира подряд." data-risk="Метаться между Безднами, руинами, боссами и оружием без опорного порядка и уставать раньше, чем закрывается прогресс." data-gain="Самый тяжелый блок начинает выглядеть как серия управляемых подкатегорий." data-list="Expert Explorer|Conqueror of Spires|Navigator of the Stars|Unvanquished Strategist">
+<div class="card">
+<h2>6) Главный объем платины закрывается не рывком, а очередями</h2>
+<p>После того как у вас поставлена карта и поднят лагерь, начинается настоящий марафон. Лучший способ не задохнуться - не «дочищать мир», а вести крупные пакеты в понятной очередности: сначала исследование, затем шпили и созвездия, потом мастерии и тактика, а уже на этой базе - боссы и экзотика.</p>
+<div class="nodes">
+<div class="node">
+<h4>Expert Explorer</h4>
+<p>Это не один трофей, а комбайн из Бездны, секретных мест, руин, святилищ и лабиринтов.</p>
+</div>
+<div class="node">
+<h4>Шпили и звезды</h4>
+<p>Conqueror of Spires и Navigator of the Stars требуют отдельного настроя, а не случайных визитов «раз уж рядом».</p>
+</div>
+<div class="node">
+<h4>Unvanquished Strategist</h4>
+<p>Оружие, тактика и специальные роли лучше закрывать по категориям, пока вы еще помните, чем именно заняты.</p>
+</div>
+</div>
+<ul class="splits">
+<li>
+<time>Очередь 1</time>
+<b>Мир:</b> Бездна, секреты, руины, святилища, лабиринты.</li>
+<li>
+<time>Очередь 2</time>
+<b>Шпили:</b> восемь крупных вертикальных точек и связанные с ними головоломки.</li>
+<li>
+<time>Очередь 3</time>
+<b>Созвездия:</b> Constellation Helm, Gate of Truth и звездные сундуки.</li>
+<li>
+<time>Очередь 4</time>
+<b>Бой:</b> мастерии оружия, тактические испытания, боссы и копирование приемов <b>Watch and Learn</b>.</li>
+</ul>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 6</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p6_explore" type="checkbox">Разбил исследовательский пакет на отдельные очереди: Бездна, секреты, руины, святилища, лабиринты, шпили</label>
+</li>
+<li>
+<label>
+<input data-k="p6_combat" type="checkbox">Веду боевые категории системно: оружейные мастерии, тактика, спецоружие и боссы, а не все вперемешку</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Из чего реально состоит Expert Explorer</span>
+<small>Мир</small>
+</summary>
+<div class="accBody">
+<p>По вашим материалам этот пакет сходится из нескольких крупных подкатегорий: около 40 зон Бездны, 60 секретных мест, 37 древних руин, 16 святилищ и 4 лабиринтов. Это несколько разных ритмов прохождения внутри одного большого блока.</p>
+<p>Именно поэтому здесь полезно чередовать типы задач. После парящих островов Бездны удобно уходить в секретные места и руины на земле, а не упираться в один и тот же темп десятки часов подряд. Из конкретных ориентиров в исходниках упоминаются <b>Trial of the Sandscale</b>, <b>Threefold Fork</b> и <b>Peak of Enlightenment</b> - такие точки хорошо работают как якоря для длинных исследовательских сессий.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Шпили и Constellation Helm</span>
+<small>Навигация</small>
+</summary>
+<div class="accBody">
+<p>Часть шпилей сюжетно открывается не сразу, поэтому не пытайтесь выбить весь пакет слишком рано. Constellation Helm удобнее вести отдельной очередью, а не между обычными вылазками.</p>
+<p>Из практики ваших материалов: <b>Spire of the Stars</b> полноценно открывается только после главы 4, а внутри требует точного порядка символов на лифте - сверху <b>Hourglass</b>, затем <b>Circle</b>, ниже <b>Triangle</b> и внизу <b>Square</b>. Сам <b>Constellation Helm</b> нужен не только ради красивого неба: он ведет к звездным сундукам и открытию <b>Gate of Truth</b>, поэтому лучше выделять под него отдельный заход.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Боссы и копирование приемов</span>
+<small>Практика</small>
+</summary>
+<div class="accBody">
+<p>На боссах здесь важно не только выжить, но и читать бой. Если игра позволяет скопировать прием через удачный блок или уклонение, воспринимайте это как часть маршрута.</p>
+<p>Это особенно важно, потому что по вашим материалам в игре 76 уникальных боссов, а пакет <b>Beast Slayer</b> и родственные категории любят проверять не просто урон, а понимание паттернов. Успешно снятые техники вроде <b>Nature's Echo</b> или <b>Force Palm Pulse</b> лучше воспринимать как добычу маршрута, а не как случайный бонус после тяжелого боя.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s7" data-short="07" data-phase="Фаза 7/8" data-title="Побочные системы: преступность, торговля, мини-игры, охота, маунты" data-obj="Добить большой бытовой блок трофеев без ощущения, что вы играете сразу в пять разных игр." data-risk="Свалить Shadowlord, Lord of Honor, торговлю, мини-игры и маунтов в один ком и потерять управление маршрутом." data-gain="Все небоевые категории начинают закрываться по чистым тематическим пачкам." data-list="Shadowlord|Lord of Honor|The Golden Merchant|Tamer of Legends">
+<div class="card">
+<h2>7) Бытовой блок платины надо уважать так же, как боевой</h2>
+<p>Почти все, что не относится к сюжету и бою, удобно закрывать одним большим отдельным этапом. В Crimson Desert это не «мелочи напоследок», а тяжелые системы со своими маршрутами: преступность, честь фракции, торговля, мини-игры, охота и укрощение легендарных маунтов.</p>
+<div class="grid2">
+<ul>
+<li>
+<b>Shadowlord:</b> маска, кражи, двери, флаги, повозки, свиньи и розыск.</li>
+<li>
+<b>Lord of Honor:</b> святилища Серых Грив, расширение лагеря, печати, наемники, Ironcrawler.</li>
+<li>
+<b>The Golden Merchant:</b> таверны, красильщики, ведьмы, торговые контракты и деньги лагеря.</li>
+</ul>
+<ul>
+<li>
+<b>True Gamer:</b> дуэли, силовые испытания и карточные игры.</li>
+<li>
+<b>Ultimate Hunter / Natural Collector:</b> фауна, ресурсы и живой мир, который нельзя закрыть парой случайных вылазок.</li>
+<li>
+<b>Tamer of Legends:</b> дикие кони и три легендарных маунта, о которых нельзя вспоминать только в самом конце.</li>
+</ul>
+</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 7</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p7_systems" type="checkbox">Развел побочные системы по темам: преступность, честь, торговля и мини-игры, вместо хаотичных набегов</label>
+</li>
+<li>
+<label>
+<input data-k="p7_mounts" type="checkbox">Держу в отдельном плане охоту, природные категории и легендарных маунтов, а не оставляю их как «что-нибудь потом»</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Развернутое пояснение</h3>
+<details class="acc">
+<summary>
+<span>Shadowlord: сначала маска, потом преступления</span>
+<small>Преступность</small>
+</summary>
+<div class="accBody">
+<p>Этот блок надо вести осознанно и в маске. Удобный подход - закрывать преступный пакет локально: один блок на скрытность и флаги, один на воровство и двери, один на скупщиков краденого и розыск.</p>
+<p>Маска здесь не косметика: она прикрывает личность и спасает от резкого падения очков вклада <b>Contribution Points</b>, пока вы поднимаете красные зоны поиска и бегаете от стражи. Из конкретных задач ваших исходников особенно удобно группируются ночные флаги, вскрытие 20 дверей, карманные кражи в трех городах, свиньи, повозки после <b>Strongbox with Wheels</b> и финальный розыск под арест цели с максимальной наградой за голову.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Lord of Honor и Серые Гривы</span>
+<small>Фракция</small>
+</summary>
+<div class="accBody">
+<p>Святилища Серых Грив, расширение лагеря, наемники, печати <b>Signets</b> и <b>Ironcrawler</b> лучше складываются в одну ветку влияния, когда карта уже раскрыта и лагерь живет полной жизнью.</p>
+<p>Если раскладывать по делу, то здесь вам нужны 12 святилищ Серых Грив <b>Greymane Shrines</b>, 20 наемников в лагерь, второе расширение базы на <b>Howling Hill</b>, заезд на крыше <b>Ironcrawler</b> минимум на 2 километра и запас вклада <b>Contribution</b> на одновременный выкуп региональных печатей <b>Signets</b>. Когда это делается как единая фракционная кампания, блок ощущается вменяемо; когда вразнобой - превращается в кашу из хвостов.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Мини-игры, охота и легендарные маунты</span>
+<small>Финал</small>
+</summary>
+<div class="accBody">
+<p>
+<b>True Gamer</b> лучше закрывать короткими отдельными сессиями, а не между тяжелыми вылазками. То же самое с охотой и легендарными маунтами: это спокойный тематический блок, а не набор случайных хвостов.</p>
+<p>Внутри этого пакета тоже есть конкретика: <b>True Gamer</b> включает дуэли, силовые испытания и карточные игры, а в камень-ножницы-бумагу из ваших заметок можно играть от паттерна после ничьей. Параллельно не забывайте, что <b>Tamer of Legends</b> упирается не только в диких коней, но и в трех легендарных маунтов - <b>Camora</b>, <b>Royler</b> и <b>Rokade</b>, а коллекционные пакеты по охоте и природе плохо закрываются без отдельного спокойного захода по фауне и ресурсам.</p>
+</div>
+</details>
+<details class="acc">
+<summary>
+<span>Бытовые пакеты лучше вести по ходу игры</span>
+<small>Накопление</small>
+</summary>
+<div class="accBody">
+<p>Самый неблагодарный поздний гринд здесь рождается не только из боев, но и из бытовых накопительных категорий. Они выглядят безопасно, пока не превращаются в финальный список «где я еще не поднимал это ???».</p>
+<p>Поэтому полезное правило простое: увидели новый предмет с меткой <b>???</b> - подбирайте хотя бы один экземпляр. То же касается пещер, трав, грибов, насекомых и мирных животных: питомцы требуют доводить доверие до 100, а для <b>Life 9: Pets</b> нужны 30 уникальных зверей. Природные и коллекционные пакеты куда приятнее растут на дистанции, чем в режиме судорожной зачистки карты под конец.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="scene section" id="s8" data-short="08" data-phase="Фаза 8/8" data-title="Финальный аудит перед Pywel Legend" data-obj="Правильно диагностировать зависший хвост и не тратить еще десятки часов на неправильную категорию." data-risk="Считать, что любой недостающий прогресс надо просто погриндить еще, хотя причина может быть в неактивной категории, сломанном оружии или уже мертвой точке на карте." data-gain="Чистый финальный заход без лишней паники и пустых повторов." data-list="Финальный аудит|Проверка испытаний|Pywel Legend|35/35">
+<div class="card">
+<h2>8) Последний контроль перед платиной</h2>
+<p>К финалу задача уже не в том, чтобы еще сильнее напрячься. Задача в другом: назвать проблему правильным именем. В Crimson Desert зависший хвост почти всегда лечится не упорством, а точной диагностикой.</p>
+<ul>
+<li>
+<b>Если не движется испытание:</b> сначала проверьте, активирован ли нужный Артефакт Бездны и точно ли вы делаете действие в правильной категории.</li>
+<li>
+<b>Если зависло оружие:</b> убедитесь, что считаете прогресс на оригинальном нужном экземпляре, а не на позднем аналоге.</li>
+<li>
+<b>Если проблема в фортах или башнях:</b> смотрите, не выжгли ли вы карту слишком рано и не нужен ли отдельный сценарий с еще живыми точками.</li>
+<li>
+<b>Если пропали NPC или квест:</b> сначала проверяйте сюжетное окно и экспедиции, а не списывайте все на окончательный провал профиля.</li>
+</ul>
+<div class="code">
+<b>Быстрый аудит:</b> нет прогресса -> проверь категорию и артефакт -> проверь правильный предмет или оружие -> проверь, жива ли нужная точка на карте -> только потом повторяй действие.</div>
+<div class="phase">
+<div class="phaseHead">
+<span>Чек-лист фазы</span>
+<b>Фаза 8</b>
+</div>
+<ul class="phaseList">
+<li>
+<label>
+<input data-k="p8_audit" type="checkbox">Провел финальный аудит хвостов по типам проблемы, а не начал бессмысленный повтор всего подряд</label>
+</li>
+<li>
+<label>
+<input data-k="p8_platinum" type="checkbox">Закрыл профиль до конца и получил Pywel Legend</label>
+</li>
+</ul>
+</div>
+<div class="deep">
+<h3>Итог маршрута</h3>
+<details class="acc">
+<summary>
+<span>Финальная схема</span>
+<small>Резюме</small>
+</summary>
+<div class="accBody">
+<p>Путь к платине складывается в понятную последовательность: сначала логистика и Артефакты Бездны, потом история и лагерь, затем большие исследовательские и боевые пакеты, после них - бытовые системы, а уже в конце - спокойный аудит хвостов.</p>
+<p>На практике финальный чек лучше вести по типу поломки, а не по названию трофея. Если не движется испытание - откройте журнал испытаний <b>Journal - Challenges</b> и убедитесь, что категория вообще была активирована артефактом; если зависло оружие - проверьте, что вы фармите на оригинальном экземпляре, а не на позднем крафтовом аналоге; если уперлись в форты - ищите, не выжгли ли карту раньше времени.</p>
+<p>Отдельный слой аудита - живые системы мира. Пропавшие NPC часто оказываются не «сломавшимся сейвом», а следствием сюжета, воспоминаний или активной экспедиции. Поэтому идеальный финал маршрута выглядит так: сначала диагностируете тип хвоста, потом идете в правильную подсистему, и только после этого повторяете нужное действие.</p>
+</div>
+</details>
+</div>
+<div class="checkWrap">
+<div class="checkHead">
+<span>Сводный чек-лист всех фаз</span>
+<b id="done">0 / 16</b>
+</div>
+<p class="hint">Отмечайте только то, что реально уже закрыли или точно поставили на рельсы. Когда все 16 отметок активны, это должно означать, что профиль действительно доведен до финального аудита.</p>
+<ul class="todo">
+<li>
+<label>
+<input data-k="p1_route" type="checkbox">Зафиксировал порядок категорий и раннюю логистику<small>Фаза 1</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p1_basics" type="checkbox">Разложил сейвы и определил точку входа<small>Фаза 1</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p2_artifacts" type="checkbox">Принял правило Артефактов Бездны<small>Фаза 2</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p2_noBlind" type="checkbox">Не бегу в слепую зачистку до логистики<small>Фаза 2</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p3_forts" type="checkbox">Оставил нужные форты и башни под испытания<small>Фаза 3</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p3_weapons" type="checkbox">Не ломаю и не продаю важное уникальное оружие<small>Фаза 3</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p4_map" type="checkbox">Поставил карту и раннюю сеть перемещений<small>Фаза 4</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p4_economy" type="checkbox">Поднял ранний инвентарь, артефакты и базовую экономику<small>Фаза 4</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p5_story" type="checkbox">Провел сюжет до нужных поздних окон и переноса лагеря<small>Фаза 5</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p5_gear" type="checkbox">Подготовил кухню, улучшения и роли героев<small>Фаза 5</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p6_explore" type="checkbox">Развел большой исследовательский пакет по очередям<small>Фаза 6</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p6_combat" type="checkbox">Системно веду боевые категории<small>Фаза 6</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p7_systems" type="checkbox">Разделил преступность, честь, торговлю и мини-игры по темам<small>Фаза 7</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p7_mounts" type="checkbox">Держу под контролем охоту, природу и маунтов<small>Фаза 7</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p8_audit" type="checkbox">Провел финальный аудит хвостов<small>Фаза 8</small>
+</label>
+</li>
+<li>
+<label>
+<input data-k="p8_platinum" type="checkbox">Pywel Legend получен<small>Фаза 8</small>
+</label>
+</li>
+</ul>
+<button class="rst" id="rst" type="button">Сбросить отметки</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="madeBy" aria-label="Copyright">
+<span>&copy; 2026 Made by</span>
+<span class="madeByBrand">
+<img class="madeByMark" src="Logo.svg" alt="Logo">
+<img class="madeByWord" src="ACHIEVER.svg" alt="ACHIEVER">
+</span>
+</div>
 </main>
-<div id="winModal" aria-hidden="true"><div class="winCard"><h3>Платина закрыта!</h3><img id="winBadge" class="winBadge" src="badge-achievement.png" alt="Карточка прохождения Crimson Desert"><small class="winNote">Финальная карточка маршрута</small><p>Все фазы отмечены. Значит, путь к Pywel Legend пройден до конца без хаоса и без лишнего самообмана по дороге.</p><div class="winActions"><a id="winDownload" href="#" download="badge-achievement.png">Скачать карточку</a><button id="winClose" type="button">Закрыть</button></div></div></div>
+<div id="winModal" aria-hidden="true">
+<div class="winCard">
+<h3>Платина закрыта!</h3>
+<img id="winBadge" class="winBadge" src="@achievements_hub.png" alt="Финальная карточка Crimson Desert">
+<p>Все фазы отмечены. Значит, путь к Pywel Legend пройден до конца без хаоса и без лишнего самообмана по дороге.</p>
+<div class="winActions">
+<a id="winDownload" href="#" download="@achievements_hub.png">Скачать карточку</a>
+<button id="winClose" type="button">Закрыть</button>
+</div>
+</div>
+</div>
+<script src="assets/trophies/trophy-atlas-branches.js?v=2"></script>
 <script>
 (()=>{
 const tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null;
+const finalBadgeAsset='@achievements_hub.png';
 if(tg){tg.ready();tg.expand()}
 const scenes=[...document.querySelectorAll('.scene')],hp=document.getElementById('hp'),ht=document.getElementById('ht'),ho=document.getElementById('ho'),hr=document.getElementById('hr'),hg=document.getElementById('hg'),hpr=document.getElementById('hpr'),hf=document.getElementById('hf'),rt=document.getElementById('rt'),ring=document.getElementById('ring'),timeline=document.getElementById('timeline'),hlist=document.getElementById('hlist'),mpeek=document.getElementById('mpeek'),mstep=document.getElementById('mstep'),mpercent=document.getElementById('mpercent'),mtitle=document.getElementById('mtitle'),mfill=document.getElementById('mfill'),winModal=document.getElementById('winModal'),winClose=document.getElementById('winClose'),winBadge=document.getElementById('winBadge'),winDownload=document.getElementById('winDownload');
 const btns=[];
+const trophyAtlasMeta=[
+  {title:"Профиль и сюжет",countLabel:"6 трофеев",items:[
+    {name:"Pywel Legend",phase:"Финальный аудит",note:"Финал профиля: появится только после остальных 34 трофеев."},
+    {name:"Novice Adventurer",phase:"Фаза 5 / история",note:"Автоматический стартовый трофей за 1 главу."},
+    {name:"Master Camper",phase:"Фаза 5 / лагерь",note:"Автоматически прилетает при активации лагеря на Howling Hill."},
+    {name:"Protector of Pailune",phase:"Фаза 5 / история",note:"Сюжетный рубеж после 7 главы и задания Time to Face Justice."},
+    {name:"Proud Returnee",phase:"Фаза 5 / лагерь",note:"Переезд лагеря в Пайлун и ветка Reconstructing Pailune."},
+    {name:"Expert Storyteller",phase:"Фаза 5 / финал сюжета",note:"Золото за весь сюжет: 12 глав плюс пролог и эпилог."}
+  ]},
+  {title:"Исследование и древние зоны",countLabel:"8 трофеев",items:[
+    {name:"Maze Pathfinder",phase:"Фаза 6 / мир",note:"Все 4 лабиринта. Удобнее брать уже с нормальной логистикой."},
+    {name:"Conqueror of Spires",phase:"Фаза 6 / мир",note:"Все 8 шпилей. Часть маршрута открывается только позже по сюжету."},
+    {name:"Navigator of the Stars",phase:"Фаза 6 / мир",note:"Созвездия, Gate of Truth и небесные сундуки."},
+    {name:"Pilgrim of Wonders",phase:"Фаза 6 / мир",note:"60 секретных мест. Не оставляйте их на один огромный добор."},
+    {name:"Puzzle Solver",phase:"Фаза 6 / мир",note:"37 древних руин и пазлы на полный зачёт."},
+    {name:"Lightbringer",phase:"Фаза 6 / мир",note:"16 святилищ. Хорошо ложатся в отдельную очередь зачистки."},
+    {name:"Conqueror of the Abysses",phase:"Фаза 6 / Бездна",note:"Все испытания Бездны после раннего открытия категорий."},
+    {name:"Expert Explorer",phase:"Фаза 6 / большой мир",note:"Главное мировое золото: 9 подкатегорий исследования в одном пакете."}
+  ]},
+  {title:"Мастерство и боевой гринд",countLabel:"14 трофеев",items:[
+    {name:"Master of Swords",phase:"Фаза 6 / мастерство",note:"Все мечевые испытания."},
+    {name:"Master of Shields",phase:"Фаза 6 / мастерство",note:"Все испытания со щитом."},
+    {name:"Master of Bows",phase:"Фаза 6 / мастерство",note:"Все испытания с луком."},
+    {name:"Master of Spears",phase:"Фаза 6 / мастерство",note:"Все испытания с копьями."},
+    {name:"Master of Two-Handed Weapons",phase:"Фаза 6 / мастерство",note:"Все испытания с двуручами."},
+    {name:"Master of Artillery",phase:"Фаза 3-6 / пушка",note:"Все пушечные испытания; держите в голове багнутые нюансы."},
+    {name:"Master of Rapiers",phase:"Фаза 6 / мастерство",note:"Все испытания рапиры и щита."},
+    {name:"Master of Firearms",phase:"Фаза 6 / мастерство",note:"Все испытания огнестрела."},
+    {name:"Relentless Warrior",phase:"Фаза 6 / тренировка",note:"10 тренировочных испытаний."},
+    {name:"Battlefield Conqueror",phase:"Фаза 3-6 / бой",note:"10 боевых испытаний и живые боевые зоны."},
+{name:"Brilliant Tactician",phase:"Фаза 3-6 / ветка Operation",note:"10 испытаний категории Operation; именно здесь больше всего условно рискованных окон."},
+    {name:"Grand Collector of Arms",phase:"Фаза 3-6 / спецоружие",note:"10 испытаний особого оружия: не ломайте и не отдавайте важные стволы."},
+    {name:"Beast Slayer",phase:"Фаза 6 / боссы",note:"Испытания ветки New Power и боссовые техники."},
+    {name:"Unvanquished Strategist",phase:"Фаза 6 / большой гринд",note:"Главное боевое золото: все 10 подкатегорий мастерства."}
+  ]},
+  {title:"Бытовые системы и живая карта",countLabel:"7 трофеев",items:[
+    {name:"The Golden Merchant",phase:"Фаза 7 / торговля",note:"Все торговые испытания: деньги, контракты и логистика."},
+    {name:"Shadowlord",phase:"Фаза 7 / преступность",note:"Ветка Above the Law: маска, кражи, двери, флаги, розыск."},
+    {name:"Lord of Honor",phase:"Фаза 7 / Серые Гривы",note:"Ветка Challenges and Changes; в старых материалах может называться Greymane's Vow."},
+    {name:"Tamer of Legends",phase:"Фаза 7 / маунты",note:"Испытания верховой езды и легендарные маунты."},
+    {name:"True Gamer",phase:"Фаза 7 / мини-игры",note:"Все 5 подкатегорий мини-игр; часть удобнее делать после знакомства с системами."},
+    {name:"Ultimate Hunter",phase:"Фаза 7 / охота",note:"11 охотничьих испытаний."},
+    {name:"Natural Collector",phase:"Фаза 7 / быт",note:"12 бытовых испытаний: ???-предметы, ресурсы, знания и мирная фауна."}
+  ]}
+];
+const escapeHtml=value=>String(value??"").replace(/[&<>\"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));
+const localizeBranchTitle=title=>{
+  const value=String(title||"").trim();
+  if(!value)return"";
+  if(value==="Challenge Guide")return"Разбор испытаний";
+  if(value==="Crimson Desert Walkthrough")return"Полный сюжетный разбор";
+  if(value.startsWith("Main Quest:"))return value.replace(/^Main Quest:\s*/,"Сюжетное задание: ");
+  const numericTitleMap=[
+    ["Secret Places","тайных мест"],
+    ["Ancient Ruins","древних руин"],
+    ["Sanctum Challenges","испытаний святилищ"],
+    ["Sword Challenges","испытаний меча"],
+    ["Shield Challenges","испытаний щита"],
+    ["Bow Challenges","испытаний лука"],
+    ["Spear Challenges","испытаний копья"],
+    ["Two-Handed Weapon Challenges","испытаний двуручного оружия"],
+    ["Cannon Challenges","испытаний ручной пушки"],
+    ["Rapier and Shield Challenges","испытаний рапиры и щита"],
+    ["Gun Challenges","испытаний огнестрела"],
+    ["Special Weapons","испытаний особого оружия"],
+    ["Horse Challenges","испытаний верховой езды"],
+    ["Hunting Challenges","испытаний охоты"],
+    ["Life Challenges","бытовых испытаний"],
+    ["Test of Strength","испытания силы"],
+    ["Duel","дуэльных испытаний"],
+    ["Mind Games","испытания разума"]
+  ];
+  for(const[english,russian]of numericTitleMap){
+    const match=value.match(new RegExp(`^(\\d+)\\s+${english.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}$`));
+    if(match)return`${match[1]} ${russian}`;
+  }
+  return value;
+};
+const localizeBranchSummary=branch=>{
+  const title=branch?.pageTitle||"";
+  if(title.includes("All Main Quests"))return"Это полный список сюжетных заданий PowerPyx с разбивкой по главам и подглавам. Полезен, когда нужно сверить порядок всей сюжетной ветки, а не одно отдельное задание.";
+  if(title.includes("Walkthrough"))return"Это отдельный разбор сюжетной миссии. Здесь ветка полезна не ради общего маршрута, а чтобы быстро вспомнить точку старта, главу, подглаву и сюжетный порог для трофея.";
+  if(title.includes("All Challenges Guide"))return"Это общий список всех испытаний. Его смысл для этого разбора простой: сверить категорию, понять через какой артефакт она открывается и не делать прогресс до разблокировки.";
+  if(title.includes("Locations")||title.includes("Solutions"))return"Это отдельная карта ветки с локациями, решениями пазлов и ориентирами по миру. Открывайте её, когда нужен не общий маршрут, а точная точка на карте.";
+  if(title.includes("Challenges"))return"Это отдельная страница именно под эту ветку испытаний. Удобна в тот момент, когда нужно точное условие зачёта и примеры задач по каждой цели.";
+  return branch?.summary||"";
+};
+const localizeVisibleText=input=>{
+  let value=String(input||"").replace(/\s+/g," ").trim();
+  if(!value)return"";
+  const replacements=[
+    [/^This quest will start in /i,"Это задание начинается в "],
+    [/^This walkthrough will guide you through all objectives of /i,"На этой странице разобраны все цели задания "],
+    [/^There are (\d+) /i,"Всего в этой ветке $1 "],
+    [/^This maze is located /i,"Этот лабиринт находится "],
+    [/^This maze is solved by /i,"Этот лабиринт решается через "],
+    [/^This challenge seems to be bugged/i,"Это испытание, похоже, забаговано"],
+    [/^The easiest way /i,"Самый простой способ "],
+    [/^The Hand Cannon is /i,"Ручная пушка "],
+    [/^Watchtowers are found /i,"Сторожевые башни встречаются "],
+    [/^At the start of this guide /i,"В начале этой страницы "],
+    [/^Below are links to /i,"Ниже собраны ссылки на "],
+    [/^First, you must /i,"Сначала нужно "],
+    [/^Without these quests/i,"Без этих квестов"],
+    [/^You meet the first Witch/i,"С первой ведьмой вы встречаетесь"],
+    [/^The Sanctums are puzzle challenges\./i,"Святилища здесь работают как пазловые испытания."],
+    [/^Head to /i,"Отправляйтесь к "],
+    [/^Go to /i,"Идите к "],
+    [/^Follow /i,"Следуйте за "],
+    [/^Speak with /i,"Поговорите с "],
+    [/^Return to /i,"Вернитесь в "],
+    [/^Investigate /i,"Осмотрите "],
+    [/^Activate /i,"Активируйте "],
+    [/^Destroy /i,"Уничтожьте "],
+    [/^Defeat /i,"Победите "],
+    [/^Complete /i,"Завершите "],
+    [/^Acquire all /i,"Соберите все "],
+    [/^Acquire /i,"Получите "],
+    [/^Craft /i,"Создайте "],
+    [/^Cook /i,"Приготовьте "],
+    [/^Tame /i,"Приручите "],
+    [/^Hunt /i,"Добудьте "],
+    [/^Win in /i,"Победите в "],
+    [/^Win against /i,"Победите "],
+    [/^Have a win streak in /i,"Сделайте серию побед в "],
+    [/ beat the Champion\b/gi," победите чемпиона"],
+    [/\bChallenge\s+(\d+):/gi,"Испытание $1:"],
+    [/\bChallenge\b/gi,"испытание"],
+    [/\bChallenges\b/gi,"испытания"],
+    [/\bMaze\b/gi,"лабиринт"],
+    [/\bMazes\b/gi,"лабиринты"],
+    [/\bSanctum\b/gi,"святилище"],
+    [/\bSanctums\b/gi,"святилища"],
+    [/\bSecret Place\b/gi,"тайное место"],
+    [/\bSecret Places\b/gi,"тайные места"],
+    [/\bAncient Ruins\b/gi,"древние руины"],
+    [/\bWitch of Wisdom\b/gi,"Ведьма мудрости"],
+    [/\bWitch of Kindness\b/gi,"Ведьма доброты"],
+    [/\bWitch of Humility\b/gi,"Ведьма смирения"],
+    [/\bWitch of Strength\b/gi,"Ведьма силы"],
+    [/\bStory-Related Sanctums\b/gi,"Сюжетные святилища"],
+    [/\bPrologue\b/gi,"Пролог"],
+    [/\bEpilogue\b/gi,"Эпилог"],
+    [/Sealed Abyss Artifact/gi,"Запечатанный артефакт Бездны"],
+    [/Abyss Artifact/gi,"Артефакт Бездны"],
+    [/Starting weapon/gi,"стартовое оружие"],
+    [/Hand Cannon/gi,"ручная пушка"],
+    [/Challenge Guide/gi,"разбор испытаний"],
+    [/Main Quest/gi,"сюжетное задание"],
+    [/Sub-Chapter/gi,"подглава"],
+    [/Chapter/gi,"глава"],
+    [/Quest Description/gi,"описание квеста"],
+    [/Starting Location/gi,"стартовая точка"],
+    [/Requirement/gi,"требование"],
+    [/Reward/gi,"награда"],
+    [/Objectives/gi,"цели"],
+    [/Story-Related/gi,"сюжетный"],
+    [/story-related/gi,"сюжетный"],
+    [/Fast Travel Point/gi,"точка быстрого перемещения"],
+    [/Fast Travel/gi,"быстрое перемещение"],
+    [/Question Mark/gi,"вопросительный знак"],
+    [/white search areas/gi,"белые зоны поиска"],
+    [/white search area/gi,"белая зона поиска"],
+    [/northwest of/gi,"к северо-западу от"],
+    [/northeast of/gi,"к северо-востоку от"],
+    [/southwest of/gi,"к юго-западу от"],
+    [/southeast of/gi,"к юго-востоку от"],
+    [/north of/gi,"к северу от"],
+    [/south of/gi,"к югу от"],
+    [/east of/gi,"к востоку от"],
+    [/west of/gi,"к западу от"],
+    [/\bthe\b\s+/gi,""],
+    [/\ban\b\s+/gi,""],
+    [/\ba\b\s+/gi,""],
+    [/directly /gi,"прямо "],
+    [/immediately /gi,"сразу "],
+    [/slightly /gi,"немного "],
+    [/at the intersection/gi,"на перекрестке"],
+    [/at intersection/gi,"на перекрестке"],
+    [/on the side of the road/gi,"на обочине дороги"],
+    [/within (\d+) seconds/gi,"за $1 сек."],
+    [/within (\d+) minutes/gi,"за $1 мин."],
+    [/from a distance of (\d+) meters or more/gi,"с дистанции $1 метров или больше"],
+    [/while riding a horse/gi,"сидя верхом"],
+    [/using a hand cannon/gi,"используя ручную пушку"],
+    [/using the bow/gi,"используя лук"],
+    [/without destroying any surrounding objects/gi,"не разрушив окружающие объекты"],
+    [/wild horses/gi,"диких лошадей"],
+    [/watchtowers/gi,"сторожевые башни"],
+    [/enemies/gi,"врагов"],
+    [/enemy/gi,"врага"],
+    [/mounted enemy/gi,"всадника"],
+    [/animals/gi,"животных"],
+    [/birds/gi,"птиц"],
+    [/mushroom/gi,"грибов"],
+    [/medicinal herb/gi,"лечебных трав"],
+    [/poisonous herb/gi,"ядовитых трав"],
+    [/knowledge/gi,"знания"],
+    [/freshwater/gi,"пресноводной рыбы"],
+    [/saltwater/gi,"морской рыбы"],
+    [/legendary/gi,"легендарной рыбы"],
+    [/underwater wildlife/gi,"подводной фауны"],
+    [/Axiom Force/gi,"Axiom Force"],
+    [/Force Palm/gi,"Force Palm"],
+    [/Guiding Light/gi,"Guiding Light"],
+    [/Lantern/gi,"фонарь"],
+    [/Witch/gi,"ведьма"],
+    [/Solution/gi,"решение"],
+    [/Location/gi,"локация"],
+    [/Comments/gi,"комментарии"],
+    [/CURRENTLY BUGGED/gi,"СЕЙЧАС ЗАБАГОВАНО"],
+    [/\bbugged\b/gi,"забаговано"]
+  ];
+  replacements.forEach(([pattern,replacement])=>{value=value.replace(pattern,replacement)});
+  return value.replace(/\s+\./g,".").trim();
+};
+const localizeBranchBullet=bullet=>{
+  const value=String(bullet||"");
+  return localizeVisibleText(value
+    .replace(/^How to Unlock:/,"Как открыть:")
+    .replace(/^Challenge:/,"Задача:")
+    .replace(/^How to Complete:/,"Как закрыть:")
+    .replace(/^Categories on page:/,"Категории на странице:")
+    .replace(/^Core point:/,"Ключевая мысль:")
+    .replace(/^Starting Location:/,"Стартовая точка:")
+    .replace(/^Chapter:/,"Глава:")
+    .replace(/^Sub-Chapter:/,"Подглава:")
+    .replace(/^Requirement:/,"Требование:")
+    .replace(/^Reward:/,"Награда:")
+    .replace(/^Quest Description:/,"Описание квеста:")
+    .replace(/^Location:/,"Локация:")
+    .replace(/^Solution:/,"Решение:")
+    .replace(/^Count covered on this page:/,"На странице разобрано:")
+    .replace(/^Early entries on the page:/,"Первые точки на странице:")
+    .replace(/^Use this branch to identify white search zones and avoid wandering through the map blind\./,"Практический смысл ветки: помогает быстро сверять белые зоны поиска и не бродить по карте вслепую.")
+    .replace(/^Guide category:/,"Категория ветки:")
+    .replace(/^Special note on the page:/,"Отдельный нюанс страницы:")
+    .replace(/\bCombat\b/g,"бой")
+    .replace(/\bMastery\b/g,"мастерство")
+    .replace(/\bLife\b/g,"бытовые системы")
+    .replace(/\bMinigame\b/g,"мини-игры")
+    .replace(/\bExploration\b/g,"исследование"));
+};
+const localizeBranchBlockTitle=title=>({
+  page_overview:"Что полезно на этой странице",
+  mission_facts:"База миссии",
+  objectives:"Цели задания",
+  walkthrough_sections:"Разбор этапов",
+  challenge_entries:"Все задачи ветки",
+  challenge_hub_categories:"Категории общего раздела испытаний",
+  challenge_menu_order:"Порядок в меню испытаний",
+  region_entries:"Разбивка по регионам",
+  sanctum_prereqs:"Что нужно до входа",
+  sanctum_groups:"Святилища по ведьмам и сюжету",
+  page_sections:"Полный разбор страницы",
+  chapter_list:"Список глав"
+}[title]||title);
+const cleanUnlockText=(unlock="")=>{
+  let text=String(unlock).replace(/\s+/g," ").trim();
+  if(/^Complete .* challenges\./i.test(text)&&text.includes("Challenge Guide"))text=text.replace(/\s+Challenge Guide.*$/,"");
+  text=text.replace(/\s+\./g,".").trim();
+  const exactUnlocks=new Map([
+    ["Earn all other trophies in Crimson Desert to unlock Platinum (no DLC required).","Получите все остальные трофеи в Crimson Desert, чтобы открыть платиновый трофей (дополнения не требуются)."],
+    ["Complete all maze challenges.","Завершите все испытания лабиринтов."],
+    ["Complete all spire challenges.","Завершите все испытания шпилей."],
+    ["Complete all constellation challenges.","Завершите все испытания созвездий."],
+    ["Complete all sword challenges.","Завершите все испытания меча."],
+    ["Complete all shield challenges.","Завершите все испытания щита."],
+    ["Complete all bow challenges.","Завершите все испытания лука."],
+    ["Complete all spear challenges.","Завершите все испытания копья."],
+    ["Complete all two-handed weapon challenges.","Завершите все испытания двуручного оружия."],
+    ["Complete all cannon challenges.","Завершите все испытания ручной пушки."],
+    ["Complete all rapier and shield challenges.","Завершите все испытания рапиры и щита."],
+    ["Complete all gun challenges.","Завершите все испытания огнестрела."],
+    ["Complete all training challenges.","Завершите все тренировочные испытания."],
+    ["Complete all battle challenges.","Завершите все боевые испытания."],
+    ["Complete all operation challenges.","Завершите все испытания ветки Operation."],
+    ["Complete all trade challenges.","Завершите все торговые испытания."],
+    ["Complete all New Power challenges.","Завершите все испытания категории New Power."],
+    ["Complete all Above the Law challenges.","Завершите все испытания категории Above the Law."],
+    ["Complete all ‘Challenges and Changes’ Challenges (was called Greymane’s Vow challenges in older patches).","Завершите все испытания «Challenges and Changes» (в старых патчах эта ветка называлась Greymane’s Vow)."],
+    ["Complete all secret place challenges.","Завершите все испытания тайных мест."],
+    ["Complete all Ancient Ruins puzzle challenges.","Завершите все испытания древних руин."],
+    ["Complete all sanctum challenges.","Завершите все испытания святилищ."],
+    ["Complete all special weapon challenges.","Завершите все испытания особого оружия."],
+    ["Complete all horse challenges.","Завершите все испытания верховой езды."],
+    ["Complete all minigame challenges (all 5 subcategories).","Завершите все испытания мини-игр (все 5 подкатегорий)."],
+    ["Complete all hunting challenges.","Завершите все испытания охоты."],
+    ["Complete all life challenges.","Завершите все бытовые испытания."],
+    ["Complete all Abyss challenges.","Завершите все испытания Бездны."],
+    ["Complete all exploration challenges (all 9 subcategories).","Завершите все исследовательские испытания (все 9 подкатегорий)."],
+    ["Complete all mastery challenges (all 10 subcategories).","Завершите все испытания мастерства (все 10 подкатегорий)."],
+    ["Automatic story-related trophy, cannot be missed. Unlocks for finishing the main story. The game has 12 Chapters, a Prologue and Epilogue. For a list of all quests refer to Crimson Desert Walkthrough. This trophy unlocks after the first Epilogue Quest: A New Beginning.","Сюжетный трофей, пропустить нельзя. Открывается за завершение основного сюжета. В игре 12 глав, пролог и эпилог. Полный порядок квестов можно сверить по общему сюжетному разбору. Трофей выпадает после первого задания эпилога: A New Beginning."]
+  ]);
+  if(exactUnlocks.has(text))return exactUnlocks.get(text);
+  if(text==="First, you must finish Chapter 7 ( Main Quest: Time to Face Justice ). This unlocks the Faction Questline “Reconstructing Pailune” and a new camp opens up in Pailune. The remaining steps are currently unconfirmed but it’s believed to be from completing the “Reconstructing Pailune” questline (possibly requires the quests at Greymane camp too)."){
+    return"Сначала нужно завершить 7 главу и сюжетное задание Time to Face Justice. После этого откроется фракционная цепочка «Reconstructing Pailune» и новый лагерь в Пайлуне. Остальные шаги пока не подтверждены, но, по текущим данным, трофей связан с завершением ветки «Reconstructing Pailune»; возможно, дополнительно нужны задания лагеря Серых Грив.";
+  }
+  return text
+    .replace(/^Automatic story-related trophy, cannot be missed\./,"Сюжетный трофей, пропустить нельзя.")
+    .replace(/\bUnlocks during\b/g,"Открывается во время")
+    .replace(/\bUnlocks after\b/g,"Открывается после")
+    .replace(/\bUnlocks Chapter\b/g,"Открывается в Главе")
+    .replace(/\bMain Quest:/g,"сюжетное задание:")
+    .replace(/\bSub-?Chapter:/g,"подглава:")
+    .replace(/\bSub Chapter:/g,"подглава:")
+    .replace(/\bChapter (\d+)/g,"Главе $1")
+    .replace(/\s+\)/g,")")
+    .trim();
+};
+const renderBranchItems=items=>{
+  if(!items||!items.length)return"";
+  return `<ul class="branchSubBullets">${items.map(entry=>`<li>${escapeHtml(localizeBranchBullet(entry))}</li>`).join("")}</ul>`;
+};
+const renderBranchEntry=entry=>`
+  <details class="acc trophyLeaf">
+    <summary>
+      <span>${escapeHtml(localizeVisibleText(localizeBranchTitle(entry.title||"Подраздел")))}</span>
+      <small>детали</small>
+    </summary>
+    <div class="accBody">
+      ${(entry.paragraphs||[]).map(text=>`<p class="branchParagraph">${escapeHtml(localizeVisibleText(text))}</p>`).join("")}
+      ${entry.items&&entry.items.length?renderBranchItems(entry.items):""}
+    </div>
+  </details>
+`;
+const renderBranchGroup=group=>`
+  <details class="acc trophyLeaf">
+    <summary>
+      <span>${escapeHtml(localizeVisibleText(localizeBranchTitle(group.title||"Группа")))}</span>
+      <small>список</small>
+    </summary>
+    <div class="accBody">
+      <div class="branchEntryList">
+        ${(group.entries||[]).map(renderBranchEntry).join("")}
+      </div>
+    </div>
+  </details>
+`;
+const localizeTrophyType=type=>({
+  Bronze:"Бронза",
+  Silver:"Серебро",
+  Gold:"Золото",
+  Platinum:"Платина"
+}[type]||type);
+const buildRouteTargets=phaseText=>{
+  const raw=String(phaseText||"").replace(/\s+/g," ").trim();
+  if(!raw)return[];
+  const [phasePart="",...detailParts]=raw.split("/").map(part=>part.trim()).filter(Boolean);
+  const detail=detailParts.join(" / ");
+  const targets=[];
+  const pushTarget=phaseNumber=>{
+    const normalizedNumber=Number(phaseNumber);
+    if(!Number.isInteger(normalizedNumber)||normalizedNumber<1||normalizedNumber>8)return;
+    targets.push({
+      target:`s${normalizedNumber}`,
+      label:`Фаза ${normalizedNumber}`,
+      detail:detail||""
+    });
+  };
+  const rangeMatch=phasePart.match(/^Фаза\s+(\d+)\s*-\s*(\d+)$/i);
+  if(rangeMatch){
+    const start=Number(rangeMatch[1]);
+    const end=Number(rangeMatch[2]);
+    for(let index=Math.min(start,end);index<=Math.max(start,end);index+=1)pushTarget(index);
+    return targets;
+  }
+  const singleMatch=raw.match(/^Фаза\s+(\d+)/i);
+  if(singleMatch){
+    pushTarget(singleMatch[1]);
+    return targets;
+  }
+  if(/финальный аудит/i.test(raw)){
+    return [{
+      target:"s8",
+      label:"Фаза 8",
+      detail:"финальный аудит"
+    }];
+  }
+  return targets;
+};
+const renderRouteButtons=phaseText=>{
+  const targets=buildRouteTargets(phaseText);
+  if(!targets.length)return `<p class="routeFallback">${escapeHtml(phaseText)}</p>`;
+  return `<div class="routeButtons">${targets.map(({target,label,detail})=>`
+    <button class="routeButton" type="button" data-route-target="${escapeHtml(target)}" aria-label="${escapeHtml(`Перейти к ${label}${detail?`: ${detail}`:""}`)}">
+      <span>${escapeHtml(label)}</span>
+      ${detail?`<small>${escapeHtml(detail)}</small>`:""}
+    </button>
+  `).join("")}</div>`;
+};
+const extraBranchBullet=(itemName,branch)=>{
+if(itemName==="Master of Artillery"&&(branch?.pageTitle||"").includes("All Cannon Challenges"))return"Ручная оговорка для маршрута: пушечный пакет стоит считать патч-чувствительным, а задачи на Charged Shot лучше не фармить вслепую без сверки текущего состояния.";
+  if(itemName==="Proud Returnee"&&(branch?.pageTitle||"").includes("Time to Face Justice"))return"Ручная оговорка для маршрута: сам вход в окно Pailune подтвержден, но поздние шаги этой ветки отдельно отмечены как чувствительные к текущему состоянию квестлайна.";
+  return"";
+};
+const renderTrophyAtlas=()=>{
+  const mount=document.getElementById("trophyAtlas");
+  const legacy=document.querySelector(".trophyGuideLegacy");
+  const source=window.TROPHY_ATLAS_BRANCHES;
+  if(!mount)return;
+  if(!source){
+    if(legacy)legacy.hidden=false;
+    return;
+  }
+  mount.innerHTML=trophyAtlasMeta.map((group,groupIndex)=>`
+    <details class="acc" ${groupIndex===0?"open":""}>
+      <summary>
+        <span>${escapeHtml(group.title)}</span>
+        <small>${escapeHtml(group.countLabel)}</small>
+      </summary>
+      <div class="accBody">
+        ${group.items.map(item=>{
+          const raw=source[item.name]||{};
+          const type=raw.type||"";
+          const typeClass=`trophyType-${String(type).toLowerCase()}`;
+          const branches=Array.isArray(raw.branches)?raw.branches:[];
+          const typeLabel=localizeTrophyType(type);
+          const unlock=cleanUnlockText(raw.unlock||"");
+          const renderBranch=branch=>{
+            const blocks=Array.isArray(branch.blocks)?branch.blocks:[];
+            const extraBullet=extraBranchBullet(item.name,branch);
+            return `
+                      <details class="acc trophyBranch">
+                        <summary>
+                          <span>${escapeHtml(localizeBranchTitle(branch.title))}</span>
+                          <small>разбор ветки</small>
+                        </summary>
+                        <div class="accBody">
+                          <p class="branchLead">${escapeHtml(localizeBranchSummary(branch))}</p>
+                          ${extraBullet?`<ul class="branchBullets"><li>${escapeHtml(extraBullet)}</li></ul>`:""}
+                          ${blocks.map(block=>{
+                            if(block.type==="list")return block.items&&block.items.length?`
+                              <div class="branchBlock">
+                                <h5>${escapeHtml(localizeBranchBlockTitle(block.title))}</h5>
+                                ${renderBranchItems(block.items)}
+                              </div>
+                            `:"";
+                            if(block.type==="entries")return block.entries&&block.entries.length?`
+                              <div class="branchBlock">
+                                <h5>${escapeHtml(localizeBranchBlockTitle(block.title))}</h5>
+                                <div class="branchEntryList">
+                                  ${block.entries.map(renderBranchEntry).join("")}
+                                </div>
+                              </div>
+                            `:"";
+                            if(block.type==="entry_groups")return block.groups&&block.groups.length?`
+                              <div class="branchBlock">
+                                <h5>${escapeHtml(localizeBranchBlockTitle(block.title))}</h5>
+                                <div class="branchEntryList">
+                                  ${block.groups.map(renderBranchGroup).join("")}
+                                </div>
+                              </div>
+                            `:"";
+                            return"";
+                          }).join("")}
+                        </div>
+                      </details>
+                    `;
+          };
+          return `
+            <details class="acc trophyEntry">
+              <summary>
+                <div class="trophyEntryHead">
+                  <img class="trophyEntryIcon" src="${escapeHtml(raw.icon||"")}" alt="${escapeHtml(item.name)}">
+                  <div class="trophyEntryInfo">
+                    <h4>${escapeHtml(item.name)}</h4>
+                    <p>${escapeHtml(item.note)}</p>
+                    <small>${escapeHtml(item.phase)}</small>
+                  </div>
+                  <span class="trophyType ${escapeHtml(typeClass)}"><img src="${escapeHtml(raw.typeIcon||"")}" alt="${escapeHtml(typeLabel)}">${escapeHtml(typeLabel)}</span>
+                </div>
+              </summary>
+              <div class="accBody">
+                <p class="trophyBodyLead">${escapeHtml(item.note)}</p>
+                <div class="trophyBodyMeta">
+                  <div>
+                    <b>Условие трофея</b>
+                    <p>${escapeHtml(unlock||"Собирается через остальные трофеи профиля.")}</p>
+                  </div>
+                  <div>
+                    <b>Где это лежит в маршруте</b>
+                    ${renderRouteButtons(item.phase)}
+                  </div>
+                </div>
+                ${branches.length?`
+                  <div class="trophyBranchList">
+                    ${branches.map(renderBranch).join("")}
+                  </div>
+                `:``}
+              </div>
+            </details>
+          `;
+        }).join("")}
+      </div>
+    </details>
+  `).join("");
+  if(legacy)legacy.hidden=true;
+};
 scenes.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.textContent=s.dataset.short||String(i+1).padStart(2,'0');b.onclick=()=>s.scrollIntoView({behavior:'smooth',block:'start'});timeline.appendChild(b);btns.push(b)});
 const setScene=i=>{const s=scenes[i];if(!s)return;btns.forEach((b,n)=>b.classList.toggle('on',n===i));hp.textContent=s.dataset.phase||'';ht.textContent=s.dataset.title||'';ho.textContent=s.dataset.obj||'';hr.textContent=s.dataset.risk||'';hg.textContent=s.dataset.gain||'';mstep.textContent=s.dataset.phase||'';mtitle.textContent=s.dataset.title||'';hlist.innerHTML='';(s.dataset.list||'').split('|').map(v=>v.trim()).filter(Boolean).forEach(v=>{const li=document.createElement('li');li.textContent=v;hlist.appendChild(li)})};
 const resolveActive=()=>{const anchor=window.innerHeight*.42;let active=0,min=Infinity;scenes.forEach((s,i)=>{const r=s.getBoundingClientRect();if(r.top<=anchor&&r.bottom>anchor)active=i;const d=Math.abs(r.top-anchor);if(d<min){min=d;active=i}});return active};
@@ -68,6 +1825,14 @@ const handleScroll=()=>{setScene(resolveActive());if(window.innerWidth<=980&&win
 window.addEventListener('scroll',handleScroll,{passive:true});
 window.addEventListener('resize',handleScroll,{passive:true});
 handleScroll();
+renderTrophyAtlas();
+document.addEventListener('click',event=>{
+  const routeButton=event.target.closest('.routeButton[data-route-target]');
+  if(!routeButton)return;
+  const target=document.getElementById(routeButton.dataset.routeTarget);
+  if(!target)return;
+  target.scrollIntoView({behavior:'smooth',block:'start'});
+});
 
 const groups=[...document.querySelectorAll('[data-k]')].reduce((m,i)=>{(m[i.dataset.k]??=[]).push(i);return m},{}),keys=Object.keys(groups),done=document.getElementById('done'),rst=document.getElementById('rst'),storeKey='crimson_desert_miniapp_checklist_v1';
 const syncChecklist=()=>{
@@ -112,23 +1877,23 @@ document.querySelectorAll('.acc').forEach(acc=>{
   body.appendChild(wrap);
 });
 
-if(winBadge)winBadge.src='badge-achievement.png?v='+Date.now();
+if(winBadge)winBadge.src=finalBadgeAsset+'?v='+Date.now();
 if(winDownload)winDownload.onclick=async e=>{
   e.preventDefault();
-  const url=new URL('badge-achievement.png?v='+Date.now(),window.location.href).href;
+  const url=new URL(finalBadgeAsset+'?v='+Date.now(),window.location.href).href;
   try{
     const r=await fetch(url,{cache:'no-store'});
     const blob=await r.blob();
     const a=document.createElement('a');
     a.href=URL.createObjectURL(blob);
-    a.download='badge-achievement.png';
+    a.download='@achievements_hub.png';
     document.body.appendChild(a);
     a.click();
     a.remove();
   }catch(err){
     const a=document.createElement('a');
     a.href=url;
-    a.download='badge-achievement.png';
+    a.download='@achievements_hub.png';
     a.target='_blank';
     a.rel='noopener';
     a.click();
